@@ -1,10 +1,8 @@
 import React from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
-import red from '@material-ui/core/colors/red';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
-// eslint-disable-next-line
 // A theme with custom primary and secondary color.
 // It's optional.
 const theme = createMuiTheme({
@@ -19,22 +17,20 @@ const theme = createMuiTheme({
       main: '#3f50b5',
       dark: '#002884',
       contrastText: '#fff',
-    },
-      light: red[600],
-      main: red[500],
-      dark: red[700],
+    }
   },
-});
-
-const styles = theme => ({
-  root: {
-    backgroundColor: 'blue',
-    // Match [md, ∞[
-    //       [960px, ∞[
-    [theme.breakpoints.up('md')]: {
-      backgroundColor: 'red',
+  labelFocus: {
+      focused: {
+      color: 'red'
+      }
     },
-  },
+  input: {
+      inkbar: {
+        '&:after': {
+          backgroundColor: 'red'
+        }
+      }
+    },
 });
 
 function withRoot(Component) {

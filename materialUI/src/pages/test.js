@@ -1,35 +1,15 @@
-// eslint-disable-next-line
-import React from 'react';
-// eslint-disable-next-line
-import ReactDOM from 'react-dom';
-// eslint-disable-next-line
+import './index.js';
 import './index.css';
 
-class Timer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { seconds: 0 };
-  }
+var another = require('./index.js');
 
-  tick() {
-    this.setState(prevState => ({
-      seconds: prevState.seconds + 1
-    }));
-  }
+//another.data.timestamp();
+//another.data.currentDate();
 
-  componentDidMount() {
-    this.interval = setInterval(() => this.tick(), 1000);
-  }
 
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
+const testPerson = {  
+  firstName: 'Bill',
+  lastName: 'Johnson',
+  level: 'Expert'
+};
 
-  render() {
-    return (
-      <div>
-        Seconds: {this.state.seconds}
-      </div>
-    );
-  }
-}

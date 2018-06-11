@@ -9,8 +9,20 @@ import DialogActions from '@material-ui/core/DialogActions';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
-import Timer from './test';
 
+var methods = {
+  timestamp: function() {
+    console.log('Current Time in Unix Timestamp: ' + Math.floor(Date.now() / 1000));
+  },
+  currentDate: function() {
+    console.log('Current Date is: ' + new Date().toISOString().slice(0, 10));
+  }
+};
+
+// eslint-disable-next-line
+var person = {
+  
+};
 
 const user = {  
   firstName: 'Ankur',
@@ -107,10 +119,8 @@ class Index extends React.Component {
             <Button color="primary" onClick={this.handleClose}> OK </Button>
           </DialogActions>
         </Dialog>
-      <div>
-        <Typography variant="display1" gutterBottom> {user.level}'s React JavaScript App </Typography>
-      </div>
-        <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design in {new Date().getFullYear()} </Typography> </div>
+      <div><Typography variant="display1" gutterBottom> {user.level}'s React JavaScript App </Typography> </div>                                                                                                                                                                                                        
+        <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design in {new Date().getFullYear()} </Typography> </div>                                                                                                                                                                    
         <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </Button> <br></br> </div>
         <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </Button> <br></br> </div>
         <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </Button> <br></br> </div>
@@ -121,7 +131,7 @@ class Index extends React.Component {
         <div> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
           <Button variant="raised" onClick={this.handleClick}> Next Course </Button>
               <br></br>  <br></br>
-          <Button variant="element" color="error" onClick={this.handleClick}> {help} </Button>
+          <Button variant="element" onClick={this.handleClick}> {help} </Button>
         </div>
       </div>
     );
@@ -132,8 +142,6 @@ Index.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
+
 export default withRoot(withStyles(styles)(Index));
-
-
-// eslint-disable-next-line
-
+exports.data = methods;
