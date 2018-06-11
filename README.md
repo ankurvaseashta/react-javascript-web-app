@@ -5,4 +5,4 @@
 * This repository contains web app code.
 
 #### About Me
-* https://www.vaseashta.com.com/
+* https://www.vaseashta.com/
