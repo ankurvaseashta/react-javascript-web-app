@@ -10,6 +10,10 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
 
+/*
+Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
+*/
+
 var methods = {
   timestamp: function() {
     console.log('Current Time in Unix Timestamp: ' + Math.floor(Date.now() / 1000));
@@ -17,11 +21,6 @@ var methods = {
   currentDate: function() {
     console.log('Current Date is: ' + new Date().toISOString().slice(0, 10));
   }
-};
-
-// eslint-disable-next-line
-var person = {
-  
 };
 
 const user = {  
@@ -62,13 +61,11 @@ function date(){
 return new Date().toLocaleDateString() 
 }
 
-
 const topics = {  
   lesson1: 'Elements',
   lesson2: 'Components',
   lesson3: 'Text Fields'
 };
-
 
 const styles = theme => ({
   root: {
@@ -119,19 +116,22 @@ class Index extends React.Component {
             <Button color="primary" onClick={this.handleClose}> OK </Button>
           </DialogActions>
         </Dialog>
-      <div><Typography variant="display1" gutterBottom> {user.level}'s React JavaScript App </Typography> </div>                                                                                                                                                                                                        
-        <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design in {new Date().getFullYear()} </Typography> </div>                                                                                                                                                                    
-        <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </Button> <br></br> </div>
-        <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </Button> <br></br> </div>
-        <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </Button> <br></br> </div>
-        <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </Button> <br></br> </div>
-        <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 4 </Button> <br></br> </div>
-        <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 5 </Button> <br></br> </div>
-        <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></br> </div>
-        <div> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
-          <Button variant="raised" onClick={this.handleClick}> Next Course </Button>
-              <br></br>  <br></br>
-          <Button variant="element" onClick={this.handleClick}> {help} </Button>
+        <div><Typography variant="display1" gutterBottom> {user.level}'s React JavaScript App </Typography> </div>                                                                                                                                                                                                        
+          <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design in {new Date().getFullYear()} </Typography> </div>                                                                                                                                                                    
+            <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </Button> <br></br> </div>
+            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </Button> <br></br> </div>
+            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </Button> <br></br> </div>
+            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </Button> <br></br> </div>
+            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 4 </Button> <br></br> </div>
+            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 5 </Button> <br></br> </div>
+            <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></br> </div>
+            <div> <br></br> <br></br> <br></br> <br></br>
+            <Button variant="raised" onClick={this.handleClick}> Next Course </Button>
+            <br></br>
+            <Button onClick={this.handleClick}> {help} </Button>
+        </div>
+        <div className={classes.stem}> 
+            
         </div>
       </div>
     );
@@ -141,7 +141,6 @@ class Index extends React.Component {
 Index.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-
 
 export default withRoot(withStyles(styles)(Index));
 exports.data = methods;

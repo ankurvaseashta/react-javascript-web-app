@@ -3,6 +3,10 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+/*
+Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
+*/
+
 // A theme with custom primary and secondary color.
 // It's optional.
 const theme = createMuiTheme({
@@ -19,7 +23,7 @@ const theme = createMuiTheme({
       contrastText: '#fff',
     }
   },
-  labelFocus: {
+  focus: {
       focused: {
       color: 'red'
       }
