@@ -9,10 +9,28 @@ import DialogActions from '@material-ui/core/DialogActions';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
+import test from '../pages/test';
 
 /*
 Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
 */
+
+import {hello} from 'module'; // or './module'
+let val = hello(); // val is "Hello";
+
+var testPerson = {};
+var imported = document.createElement('script');
+imported.src = '../Index';
+document.head.appendChild(imported);
+
+function testP(testPerson) {
+  return testPerson.firstName + ' ' + testPerson.lastName;
+}
+
+//
+//
+//
+
 
 var methods = {
   timestamp: function() {
@@ -23,10 +41,11 @@ var methods = {
   }
 };
 
+
 const user = {  
   firstName: 'Ankur',
   lastName: 'Vaseashta',
-  level: 'Beginner'
+  level: 'Level One'
 };
 
 function formatName(user) {
@@ -92,6 +111,7 @@ class Index extends React.Component {
   };
 
   render() {
+    
     const { classes } = this.props;
     const { open } = this.state;
 
@@ -100,7 +120,7 @@ class Index extends React.Component {
         <Dialog open={open} onClose={this.handleClose}>
           <DialogTitle> Web Application Development </DialogTitle>  
           <DialogContent> 
-             <DialogContentText> {greetingName(user)} {currentTime}  - You are off to a good start! In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
+             <DialogContentText> {testP(testPerson)} {greetingName(user)} {currentTime}  - You are off to a good start! In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
              Here we'll cover the folowing basic concepts.
               </DialogContentText>
               <div className="topics-list">
@@ -130,13 +150,12 @@ class Index extends React.Component {
             <br></br>
             <Button onClick={this.handleClick}> {help} </Button>
         </div>
-        <div className={classes.stem}> 
-            
-        </div>
+            <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            <p> Ankur Vaseashta, Inc. </p>
       </div>
-    );
+      );
+    }
   }
-}
 
 Index.propTypes = {
   classes: PropTypes.object.isRequired,
