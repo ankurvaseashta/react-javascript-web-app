@@ -10,61 +10,27 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
 import {hello}  from '../pages/tools';
+import {user}  from '../pages/tools';
+import {topics}  from '../pages/tools';
+import {formatName}  from '../pages/tools';
+import {methods}  from '../pages/tools';
+import {help}  from '../pages/tools';
 
 /*
 Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
 */
 
-let val = hello(); // val is "Hello";
-
-var methods = {
-  timestamp: function() {
-    return new Date().toLocaleTimeString()
-  },
-  currentDate: function() {
-    return new Date().toLocaleDateString() 
-  }
-};
-
-const user = {  
-  firstName: 'Ankur',
-  lastName: 'Vaseashta',
-  level: 'Level One'
-};
-
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
-}
-
-const greeting = ( 
-  <h3> Hello, {formatName(user)}! </h3> 
-  );
-
-function greetingName(user) {
-  return greeting;
-}
-
-const help = (
-  <p> Need Help ? </p>
-  );
+let helloUser = hello();
 
 const currentTime = (
-  <div>
-    <p> The time is {methods.timestamp()} on {methods.currentDate()}. </p>
-  </div>
-);
-
-const topics = {  
-  lesson1: 'Elements',
-  lesson2: 'Components',
-  lesson3: 'Text Fields'
-};
+      <p> The current local time is {methods.timestamp()} on {methods.currentDate()}. </p>
+  );
 
 const styles = theme => ({
   root: {
     textAlign: 'center',
     paddingTop: theme.spacing.unit * 10,
-  },
+    backgroundSize: 'cover,'  },
 });
 
 class Index extends React.Component {
@@ -94,8 +60,8 @@ class Index extends React.Component {
         <Dialog open={open} onClose={this.handleClose}>
           <DialogTitle> Web Application Development </DialogTitle>  
           <DialogContent> 
-             <DialogContentText> {val} {greetingName(user)} {currentTime} - You are off to a good start! In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
-             Here we'll cover the folowing basic concepts.
+             <DialogContentText> {currentTime} <div> {helloUser} you're off to a good start! In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
+             Here we'll cover the folowing basic concepts. </div>
               </DialogContentText>
               <div className="topics-list">
                 <h3>List of topics:</h3>
@@ -111,7 +77,7 @@ class Index extends React.Component {
             <Button color="primary" onClick={this.handleClose}> OK </Button>
           </DialogActions>
         </Dialog>
-        <div><Typography variant="display1" gutterBottom> {user.level}'s React JavaScript App </Typography> </div>                                                                                                                                                                                                        
+        <div><Typography variant="display1" gutterBottom> {user.level} React JavaScript App </Typography> </div>                                                                                                                                                                                                        
           <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design in {new Date().getFullYear()} </Typography> </div>                                                                                                                                                                    
             <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </Button> <br></br> </div>
             <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </Button> <br></br> </div>
@@ -123,7 +89,10 @@ class Index extends React.Component {
             <div> <br></br> <br></br> <br></br> <br></br>
             <Button variant="raised" onClick={this.handleClick}> Next Course </Button>
             <br></br>
-            <Button onClick={this.handleClick}> {help} </Button>
+            <div>
+            <br></br>
+              <Button onClick={this.handleClick}> {help} </Button>
+            </div>
         </div>
             <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             <p> Ankur Vaseashta, Inc. </p>
