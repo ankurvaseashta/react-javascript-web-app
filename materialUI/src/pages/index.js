@@ -15,8 +15,8 @@ import test from '../pages/test';
 Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
 */
 
-import {hello} from 'module'; // or './module'
-let val = hello(); // val is "Hello";
+//import {hello} from 'module'; // or './module'
+//let val = hello(); // val is "Hello";
 
 var testPerson = {};
 var imported = document.createElement('script');
