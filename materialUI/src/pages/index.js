@@ -9,38 +9,22 @@ import DialogActions from '@material-ui/core/DialogActions';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
-import test from '../pages/test';
+import {hello}  from '../pages/tools';
 
 /*
 Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
 */
 
-//import {hello} from 'module'; // or './module'
-//let val = hello(); // val is "Hello";
-
-var testPerson = {};
-var imported = document.createElement('script');
-imported.src = '../Index';
-document.head.appendChild(imported);
-
-function testP(testPerson) {
-  return testPerson.firstName + ' ' + testPerson.lastName;
-}
-
-//
-//
-//
-
+let val = hello(); // val is "Hello";
 
 var methods = {
   timestamp: function() {
-    console.log('Current Time in Unix Timestamp: ' + Math.floor(Date.now() / 1000));
+    return new Date().toLocaleTimeString()
   },
   currentDate: function() {
-    console.log('Current Date is: ' + new Date().toISOString().slice(0, 10));
+    return new Date().toLocaleDateString() 
   }
 };
-
 
 const user = {  
   firstName: 'Ankur',
@@ -66,19 +50,9 @@ const help = (
 
 const currentTime = (
   <div>
-    <p> The time is {time()} on {date()}. </p>
+    <p> The time is {methods.timestamp()} on {methods.currentDate()}. </p>
   </div>
 );
-
-setInterval(time, 1000);
-
-function time(){
-return new Date().toLocaleTimeString()
-}
- 
-function date(){
-return new Date().toLocaleDateString() 
-}
 
 const topics = {  
   lesson1: 'Elements',
@@ -120,7 +94,7 @@ class Index extends React.Component {
         <Dialog open={open} onClose={this.handleClose}>
           <DialogTitle> Web Application Development </DialogTitle>  
           <DialogContent> 
-             <DialogContentText> {testP(testPerson)} {greetingName(user)} {currentTime}  - You are off to a good start! In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
+             <DialogContentText> {val} {greetingName(user)} {currentTime} - You are off to a good start! In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
              Here we'll cover the folowing basic concepts.
               </DialogContentText>
               <div className="topics-list">
@@ -129,6 +103,7 @@ class Index extends React.Component {
                   <li> {topics.lesson1} </li>
                   <li> {topics.lesson2} </li>
                   <li> {topics.lesson3} </li>
+                  <li> testme </li>
                 </ul>
               </div>
           </DialogContent>
