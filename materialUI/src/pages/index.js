@@ -12,19 +12,23 @@ import withRoot from '../withRoot';
 import {hello}  from '../pages/tools';
 import {user}  from '../pages/tools';
 import {topics}  from '../pages/tools';
-import {formatName}  from '../pages/tools';
 import {methods}  from '../pages/tools';
 import {help}  from '../pages/tools';
+import {footer}  from '../pages/tools';
+import {currentTime}  from '../pages/tools';
+
 
 /*
 Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
 */
 
 let helloUser = hello();
+let footerCurrent = footer();
+let theTime = currentTime();
 
-const currentTime = (
-      <p> The current local time is {methods.timestamp()} on {methods.currentDate()}. </p>
-  );
+// const currentTime = (
+//       <h5> The current local time is {methods.timestamp()} on {methods.currentDate()}. </h5>
+//   );
 
 const styles = theme => ({
   root: {
@@ -60,7 +64,7 @@ class Index extends React.Component {
         <Dialog open={open} onClose={this.handleClose}>
           <DialogTitle> Web Application Development </DialogTitle>  
           <DialogContent> 
-             <DialogContentText> {currentTime} <div> {helloUser} you're off to a good start! In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
+             <DialogContentText> {theTime} <div> {helloUser} you're off to a good start! In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
              Here we'll cover the folowing basic concepts. </div>
               </DialogContentText>
               <div className="topics-list">
@@ -78,7 +82,7 @@ class Index extends React.Component {
           </DialogActions>
         </Dialog>
         <div><Typography variant="display1" gutterBottom> {user.level} React JavaScript App </Typography> </div>                                                                                                                                                                                                        
-          <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design in {new Date().getFullYear()} </Typography> </div>                                                                                                                                                                    
+          <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design in {new Date().getFullYear()}  </Typography> </div>                                                                                                                                                                    
             <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </Button> <br></br> </div>
             <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </Button> <br></br> </div>
             <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </Button> <br></br> </div>
@@ -95,8 +99,8 @@ class Index extends React.Component {
               <Button onClick={this.handleClick}> {help} </Button>
             </div>
         </div>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-            <p> Ankur Vaseashta, Inc. </p>
+            <br></br><br></br><br></br><br></br>
+            <p> {footerCurrent} </p>
       </div>
       );
     }

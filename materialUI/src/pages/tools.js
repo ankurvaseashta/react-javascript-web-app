@@ -27,6 +27,7 @@ export function hello() {
   return "Hello " + user.firstName + ",";
 }
 
+
 export var methods = {
   timestamp: function() {
     return new Date().toLocaleTimeString()
@@ -36,5 +37,13 @@ export var methods = {
   }
 };
 
+export function currentTime() {
+   const theTime = "The current local time is " + methods.timestamp() + " on " + methods.currentDate() +".";
+   return theTime;
+ }
 
+export function footer() {
+ const note = "Vaseashta, Inc. - You viewed this page at " + methods.timestamp();
+ return note;
+}
 
