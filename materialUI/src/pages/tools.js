@@ -23,7 +23,7 @@ export function formatName(user) {
   if (user) {
     return user.firstName + ' ' + user.lastName;
   } else {
-    return "Whoops, not a valid user.";
+    return "Whoops, not a user.";
   } 
 }
 
@@ -31,23 +31,22 @@ export function hello() {
   return "Hello " + user.firstName + ",";
 }
 
-
 export var methods = {
-  timestamp: function() {
+  localeTime: function() {
     return new Date().toLocaleTimeString()
   },
-  currentDate: function() {
+  localetDate: function() {
     return new Date().toLocaleDateString() 
   }
 };
 
 export function currentTime() {
-   const theTime = "The current local time is " + methods.timestamp() + " on " + methods.currentDate() +".";
+   const theTime = "The current local time is " + methods.localeTime() + " on " + methods.localetDate() +".";
    return theTime;
  }
 
 export function footer() {
- const note = formatName(user) + " viewed this page at " + methods.timestamp();
- return note;
+  const note = formatName(user) + " viewed this page at " + methods.localeTime();
+  return note;
 }
 
