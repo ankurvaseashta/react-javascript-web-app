@@ -69,7 +69,7 @@ class Index extends React.Component {
                   <li> {topics.lesson1} </li>
                   <li> {topics.lesson2} </li>
                   <li> {topics.lesson3} </li>
-                  <li> testme </li>
+                  <li> {topics.lesson4} </li>
                 </ul>
               </div>
           </DialogContent>
@@ -85,6 +85,7 @@ class Index extends React.Component {
             <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </Button> <br></br> </div>
             <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 4 </Button> <br></br> </div>
             <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 5 </Button> <br></br> </div>
+            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 6 </Button> <br></br> </div>
             <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></br> </div>
             <div> <br></br> <br></br> <br></br> <br></br>
             <Button variant="raised" onClick={this.handleClick}> Next Course </Button>

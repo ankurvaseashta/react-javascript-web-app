@@ -7,7 +7,7 @@ Comments: Beginner's React JavaScript App: Implementing Google's Material UI Des
 export const help = "Need Help ?";
 
 export const user = {  
-  firstName: 'Ankur',
+  firstName: 'Helena',
   lastName: 'Vaseashta',
   level: 'Level One'
 };
@@ -15,7 +15,8 @@ export const user = {
 export const topics = {  
   lesson1: 'Elements',
   lesson2: 'Components',
-  lesson3: 'Text Fields'
+  lesson3: 'Text Fields',
+  lesson4: 'Checkboxes'
 };
 
 export function formatName(user) {
