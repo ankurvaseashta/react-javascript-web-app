@@ -16,7 +16,7 @@ import {methods}  from '../pages/tools';
 import {help}  from '../pages/tools';
 import {footer}  from '../pages/tools';
 import {currentTime}  from '../pages/tools';
-
+import {formatName}  from '../pages/tools';
 
 /*
 Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
@@ -25,10 +25,6 @@ Comments: Beginner's React JavaScript App: Implementing Google's Material UI Des
 let helloUser = hello();
 let footerCurrent = footer();
 let theTime = currentTime();
-
-// const currentTime = (
-//       <h5> The current local time is {methods.timestamp()} on {methods.currentDate()}. </h5>
-//   );
 
 const styles = theme => ({
   root: {
@@ -62,46 +58,68 @@ class Index extends React.Component {
     return (
       <div className={classes.root}>
         <Dialog open={open} onClose={this.handleClose}>
-          <DialogTitle> Web Application Development </DialogTitle>  
+          <DialogTitle> Web Application Development </ DialogTitle>  
           <DialogContent> 
-             <DialogContentText> {theTime} <div> {helloUser} you're off to a good start! In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
-             Here we'll cover the folowing basic concepts. </div>
-              </DialogContentText>
+             <DialogContentText> 
+             <div> 
+              {theTime}
+              <br></ br> <br></ br>
+              {helloUser} you're off to a good start! 
+              In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
+              Here we'll cover the folowing basic concepts. 
+             </ div>
+
+           </DialogContentText>
               <div className="topics-list">
-                <h3>List of topics:</h3>
+                <h3>List of topics:</ h3>
                 <ul>
-                  <li> {topics.lesson1} </li>
-                  <li> {topics.lesson2} </li>
-                  <li> {topics.lesson3} </li>
-                  <li> {topics.lesson4} </li>
+                  <li> {topics.lesson1} </ li>
+                  <li> {topics.lesson2} </ li>
+                  <li> {topics.lesson3} </ li>
+                  <li> {topics.lesson4} </ li>
                 </ul>
               </div>
           </DialogContent>
+
           <DialogActions>
-            <Button color="primary" onClick={this.handleClose}> OK </Button>
+            <Button color="primary" onClick={this.handleClose}> OK </ Button>
           </DialogActions>
+
         </Dialog>
         <div><Typography variant="display1" gutterBottom> {user.level} React JavaScript App </Typography> </div>                                                                                                                                                                                                        
-          <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design in {new Date().getFullYear()}  </Typography> </div>                                                                                                                                                                    
-            <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </Button> <br></br> </div>
-            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </Button> <br></br> </div>
-            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </Button> <br></br> </div>
-            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </Button> <br></br> </div>
-            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 4 </Button> <br></br> </div>
-            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 5 </Button> <br></br> </div>
-            <div> <br></br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 6 </Button> <br></br> </div>
-            <div> <br></br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></br> </div>
-            <div> <br></br> <br></br> <br></br> <br></br>
-            <Button variant="raised" onClick={this.handleClick}> Next Course </Button>
-            <br></br>
+          
+          <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design in {new Date().getFullYear()}  </Typography> </ div>                                                                                                                                                                    
+            
+            <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </ Button> <br></br> </ div>
+            
+            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </ Button> <br></br> </ div>
+            
+            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </ Button> <br></br> </ div>
+            
+            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </ Button> <br></br> </ div>
+            
+            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 4 </ Button> <br></br> </ div>
+            
+            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 5 </ Button> <br></br> </ div>
+            
+            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 6 </ Button> <br></br> </ div>
+            
+            <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></ br> </ div>
+            
+            <div> <br></ br> <br></br> <br></br> <br></br>
+            
+            <Button variant="raised" onClick={this.handleClick}> Next Course </ Button>
+            <br></ br>
+            
             <div>
             <br></br>
-              <Button onClick={this.handleClick}> {help} </Button>
+              <Button onClick={this.handleClick}> {help} </ Button>
             </div>
+
         </div>
-            <br></br><br></br><br></br><br></br>
-            <p> {footerCurrent} </p>
-      </div>
+            <br></ br><br></ br><br></ br><br></ br>
+            <p> {footerCurrent} </ p>
+      </ div>
       );
     }
   }

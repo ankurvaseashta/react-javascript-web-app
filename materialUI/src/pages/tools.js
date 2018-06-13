@@ -7,9 +7,9 @@ Comments: Beginner's React JavaScript App: Implementing Google's Material UI Des
 export const help = "Need Help ?";
 
 export const user = {  
-  firstName: 'Helena',
+  firstName: 'Buddy',
   lastName: 'Vaseashta',
-  level: 'Level One'
+  level: 'Level Two'
 };
 
 export const topics = {  
@@ -20,7 +20,11 @@ export const topics = {
 };
 
 export function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
+  if (user) {
+    return user.firstName + ' ' + user.lastName;
+  } else {
+    return "Whoops, not a valid user.";
+  } 
 }
 
 export function hello() {
@@ -43,7 +47,7 @@ export function currentTime() {
  }
 
 export function footer() {
- const note = "Vaseashta, Inc. - You viewed this page at " + methods.timestamp();
+ const note = formatName(user) + " viewed this page at " + methods.timestamp();
  return note;
 }
 
