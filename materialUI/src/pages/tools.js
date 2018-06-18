@@ -56,6 +56,3 @@ export function footer() {
   const note = formatName(user) + " viewed this page at " + methods.localeTime();
   return note;
 }
-
-
-

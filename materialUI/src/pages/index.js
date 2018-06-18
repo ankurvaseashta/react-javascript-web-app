@@ -22,7 +22,8 @@ import { start }  from '../pages/tools';
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
 */
 
-let theStart = start();
+//start();
+
 let helloUser = hello();
 let footerCurrent = footer();
 let theTime = currentTime();
@@ -70,9 +71,7 @@ class Index extends React.Component {
 
              <div> 
              
-              {theTime}
-             
-              <br></ br> <br></ br>
+              {theTime} <br></ br> <br></ br>
              
               {helloUser} you're off to a good start! 
               
@@ -112,12 +111,6 @@ class Index extends React.Component {
             
             <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </ Button> <br></br> </ div>
             
-            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 4 </ Button> <br></br> </ div>
-            
-            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 5 </ Button> <br></br> </ div>
-            
-            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 6 </ Button> <br></br> </ div>
-            
             <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></ br> </ div>
             
             <br></ br> <br></ br> <br></br> <br></ br>
@@ -128,10 +121,10 @@ class Index extends React.Component {
               <Button onClick={this.handleClick}> {help} </ Button>      
             </ div>
           </ div>
-              <br></ br><br></ br><br></ br><br></ br> 
-                <p> {footerCurrent} </ p>
-                <input type="text" value={this.state.query} />
-                <button onClick={this.handleClick} className="button"> Search </button>
+          <br></ br><br></ br><br></ br><br></ br> 
+          <p> {footerCurrent} </p>
+           <input type="text" value={this.state.query} /> 
+           <button onClick={this.handleClick} className="button"> Search </button>
         </ div>
       );
     }
