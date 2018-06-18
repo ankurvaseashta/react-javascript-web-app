@@ -6,10 +6,8 @@ Comments: Beginner's React JavaScript App: Implementing Google's Material UI Des
 */
 
 export function start(){
-    start: {
-        return alert("Are you ready to start?")
-      }
-};
+     return alert("Are you ready to start?")     
+}
 
 export const help = "Need Help ?";
 

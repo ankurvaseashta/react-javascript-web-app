@@ -57,11 +57,11 @@ class Index extends React.Component {
     const { classes } = this.props;
     const { open } = this.state;
 
-    return (
+    return (// Start return
 
-      <div className={classes.root}>
+      <div className={ classes.root }>
         
-        <Dialog open={open} onClose={this.handleClose}>
+        <Dialog open={ open } onClose={ this.handleClose }>
           
           <DialogTitle> Web Application Development </ DialogTitle>  
           
@@ -70,11 +70,9 @@ class Index extends React.Component {
              <DialogContentText>
 
              <div> 
-             
+          
               {theTime} <br></ br> <br></ br>
-             
-              {helloUser} you're off to a good start! 
-              
+              {helloUser} you're off to a good start!  
               In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
               Here we'll cover the folowing basic concepts. 
              
@@ -84,10 +82,10 @@ class Index extends React.Component {
               <div className="topics-list">
                 <h3>List of topics:</ h3>
                 <ul>
-                  <li> {topics.lesson1} </ li>
-                  <li> {topics.lesson2} </ li>
-                  <li> {topics.lesson3} </ li>
-                  <li> {topics.lesson4} </ li>
+                  <li> { topics.lesson1 } </ li>
+                  <li> { topics.lesson2 } </ li>
+                  <li> { topics.lesson3 } </ li>
+                  <li> { topics.lesson4 } </ li>
                 </ul>
               </div>
 
@@ -98,35 +96,32 @@ class Index extends React.Component {
           </DialogActions>
 
         </Dialog>
-
-        <div><Typography variant="display1" gutterBottom> {user.level} React JavaScript App </Typography> </div>                                                                                                                                                                                                        
-          
-          <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design components in {new Date().getFullYear()}  </Typography> </ div>                                                                                                                                                                    
-            
-            <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </ Button> <br></br> </ div>
-            
-            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </ Button> <br></br> </ div>
-            
-            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </ Button> <br></br> </ div>
-            
+       <div><Typography variant="display1" gutterBottom> {user.level} React JavaScript App </Typography> </div>
+       <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design components in { new Date().getFullYear() }  </ Typography>
+           
+          <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </ Button> <br></br> </ div>
+            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </ Button> <br></br> </ div>            
+            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </ Button> <br></br> </ div>           
             <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </ Button> <br></br> </ div>
-            
             <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></ br> </ div>
+           
+            <div> <br></ br> <Button> Test Me </Button> <br></ br> </ div>
             
-            <br></ br> <br></ br> <br></br> <br></ br>
+            <br></ br><br></ br><br></ br><br></ br>
             
             <div> 
-              <Button variant="raised" onClick={this.handleClick}> Next Course </ Button> <br></ br> <br></ br>     
-            <div>
-              <Button onClick={this.handleClick}> {help} </ Button>      
+              <Button variant="raised" onClick={ this.handleClick }> Next Course </ Button> <br></ br> <br></ br>     
+              <div>
+              <Button onClick={ this.handleClick }> { help } </ Button>      
+              </ div>
             </ div>
+          <br></ br><br></ br><br></ br><br></ br> <br></ br><br></ br><br></ br><br></ br> 
+            <p> { footerCurrent } </p>
+            <h4> Search or a topic: </ h4>
+            <input type="text" value={ this.state.query } />
+            <button onClick={ this.handleClick } className="button"> Search </button>
           </ div>
-          <br></ br><br></ br><br></ br><br></ br> 
-          <p> {footerCurrent} </p>
-           <input type="text" value={this.state.query} /> 
-           <button onClick={this.handleClick} className="button"> Search </button>
-        </ div>
-      );
+      );//End return
     }
   }
 

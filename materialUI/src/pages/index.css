@@ -1,0 +1,12 @@
+////////////////
+//// CSS ///////
+///////////////
+
+.space{
+	white-space: pre-line;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: LightBlue;
+}
