@@ -16,12 +16,13 @@ import { methods }  from '../pages/tools';
 import { help }  from '../pages/tools';
 import { footer }  from '../pages/tools';
 import { currentTime }  from '../pages/tools';
-import { formatName }  from '../pages/tools';
+import { start }  from '../pages/tools';
 
 /*
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
 */
 
+let theStart = start();
 let helloUser = hello();
 let footerCurrent = footer();
 let theTime = currentTime();
@@ -56,21 +57,31 @@ class Index extends React.Component {
     const { open } = this.state;
 
     return (
+
       <div className={classes.root}>
+        
         <Dialog open={open} onClose={this.handleClose}>
+          
           <DialogTitle> Web Application Development </ DialogTitle>  
+          
           <DialogContent> 
+
              <DialogContentText>
 
              <div> 
+             
               {theTime}
+             
               <br></ br> <br></ br>
+             
               {helloUser} you're off to a good start! 
+              
               In this course, you will learn how to build web applications using React JavaScript and Google's Material UI Design.
               Here we'll cover the folowing basic concepts. 
+             
              </ div>
-
            </DialogContentText>
+
               <div className="topics-list">
                 <h3>List of topics:</ h3>
                 <ul>
@@ -80,6 +91,7 @@ class Index extends React.Component {
                   <li> {topics.lesson4} </ li>
                 </ul>
               </div>
+
           </DialogContent>
 
           <DialogActions>
@@ -87,6 +99,7 @@ class Index extends React.Component {
           </DialogActions>
 
         </Dialog>
+
         <div><Typography variant="display1" gutterBottom> {user.level} React JavaScript App </Typography> </div>                                                                                                                                                                                                        
           
           <div> <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design components in {new Date().getFullYear()}  </Typography> </ div>                                                                                                                                                                    
@@ -106,16 +119,19 @@ class Index extends React.Component {
             <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 6 </ Button> <br></br> </ div>
             
             <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></ br> </ div>
-            <br></ br> <br></ br> <br></br> <br></ br>
-            <div> 
-              <Button variant="raised" onClick={this.handleClick}> Next Course </ Button> <br></ br> <br></ br> 
-            <div>
-
-              <Button onClick={this.handleClick}> {help} </ Button>
             
+            <br></ br> <br></ br> <br></br> <br></ br>
+            
+            <div> 
+              <Button variant="raised" onClick={this.handleClick}> Next Course </ Button> <br></ br> <br></ br>     
+            <div>
+              <Button onClick={this.handleClick}> {help} </ Button>      
             </ div>
           </ div>
-            <br></ br><br></ br><br></ br><br></ br> <p> {footerCurrent} </ p>
+              <br></ br><br></ br><br></ br><br></ br> 
+                <p> {footerCurrent} </ p>
+                <input type="text" value={this.state.query} />
+                <button onClick={this.handleClick} className="button"> Search </button>
         </ div>
       );
     }
