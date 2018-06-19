@@ -46,11 +46,11 @@ export var methods = {
 };
 
 export function currentTime() {
-   const theTime = "The current local time is " + methods.localeTime() + " on " + methods.localetDate() +".";
+   const theTime = "The current local time is " + methods.localeTime();
    return theTime;
  }
 
 export function footer() {
-  const note = formatName(user) + " viewed this page at " + methods.localeTime();
+  const note = formatName(user) + " viewed this page at " + methods.localeTime() + " on " + methods.localetDate() +".";
   return note;
 }
