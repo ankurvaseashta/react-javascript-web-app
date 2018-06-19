@@ -102,7 +102,7 @@ class Index extends React.Component {
             <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </ Button> <br></br> </ div>
             <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></ br> </ div>
            
-            <div> <Button className="space"> Test Me </Button> <br></ br> </ div>
+            <div className="space"> <button className="button"> Test Me </button> </ div>
             
             <br></ br><br></ br><br></ br><br></ br>
             
