@@ -10,17 +10,18 @@
 
 .button {
     background-color: #d7dae0;
-    border: 2px solid #051f49;;
+    border: 1px solid #051f49;;
     color: black;
-    padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    padding: 10px 10px;
-    margin-left: 0px;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 6px;
+    margin-left: 600px;
     margin-right: 0px;
     margin-top: 0px;
+    margin-bottom: 0px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -28,4 +29,28 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+h4 {
+    color: black;
+    text-align: left;
 }

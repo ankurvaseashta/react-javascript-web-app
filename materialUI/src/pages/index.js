@@ -17,7 +17,7 @@ import { help }  from '../pages/tools';
 import { footer }  from '../pages/tools';
 import { currentTime }  from '../pages/tools';
 //import { start }  from '../pages/tools';
-import { TodoApp }  from '../pages/lessonone';
+import { LessonOne }  from '../pages/lessonone';
 
 /*
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
@@ -74,7 +74,7 @@ class Index extends React.Component {
               </ p> 
            </ DialogContentText>
               <div className="topics-list">
-                <h3>List of topics:</ h3>
+                <h4>List of topics:</ h4>
                 <ul>
                   <li> Lesson 1: { topics.lesson1 }   </ li>
                   <li> Lesson 2: { topics.lesson2 }   </ li>
@@ -93,7 +93,7 @@ class Index extends React.Component {
           <p> </ p>
           <Button style={{width: 140, height: 40}} variant="raised" color="primary" onClick={this.handleClick} > Introduction </ Button>
           <p> </ p>
-          <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp">Lesson 1 </ Button>
+          <Button style={{width: 100, height: 40}} variant="raised" color="secondary" onClick={ LessonOne } > Lesson 1 </ Button>
           <p> </ p>
           <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 2 </ Button> 
           <p> </ p>
@@ -105,21 +105,22 @@ class Index extends React.Component {
           <p> </ p>
           <Button style={{width: 130, height: 40}} variant="raised" href="default.asp"> Next Course </ Button>
           <br></ br><br></ br>
-            <h4> Search topics: </ h4>
+            <h3> Search topics: </ h3>
          <form>
-         <input
-           placeholder="Search for..."
-           ref={input => this.search = input}
-           onChange={ this.handleInputChange } />
-          <p> {this.state.query} </ p>
+           <input
+             placeholder="Search for..."
+             ref={input => this.search = input}
+             onChange={ this.handleInputChange } />
+           <p> {this.state.query} </ p>
          </ form>
-        <br></ br><br></ br>
+         <br></ br><br></ br>
+         <br></ br><br></ br>
          <h5> { footerCurrent } </ h5>
-         <Button class="button" style={{width: 130, height: 40}} href="default.asp"> { help } </ Button>      
+         <Button class="button" style={{width: 130, height: 40}} href="default.asp"> { help } </ Button>
       </ div>
-      );//End return
+      );
     }
-  }//End render
+  } //End render
 
 Index.propTypes = {
   classes: PropTypes.object.isRequired,
