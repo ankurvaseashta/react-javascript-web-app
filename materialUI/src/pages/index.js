@@ -103,7 +103,7 @@ class Index extends React.Component {
           <p> </ p>
           <Button style={{width: 100, height: 40}} variant="raised" color="primary" href="default.asp"> Test </ Button>
           <p> </ p>
-          <Button style={{width: 130, height: 40}} variant="raised" href="default.asp"> Next Course </ Button>
+          <Button style={{width: 130, height: 40}} variant="raised" class ="button "href="default.asp"> Next Course </ Button>
           <br></ br><br></ br>
             <h3> Search topics: </ h3>
          <form>
