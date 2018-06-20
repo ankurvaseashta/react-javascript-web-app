@@ -32,7 +32,7 @@ let theTime = currentTime();
 const styles = theme => ({
   root: {
     textAlign: 'center',
-    paddingTop: theme.spacing.unit * 10,
+    paddingTop: theme.spacing.unit * 5,
     backgroundSize: 'cover,'  },
 });
 
@@ -78,10 +78,11 @@ class Index extends React.Component {
               <div className="topics-list">
                 <h3>List of topics:</ h3>
                 <ul>
-                  <li> { topics.lesson1 } <a href="default.asp">lesson1</a> </ li>
-                  <li> { topics.lesson2 } <a href="news.asp">lesson2</a> </ li>
-                  <li> { topics.lesson3 } <a href="contact.asp">lesson3</a> </ li>
-                  <li> { topics.lesson4 } <a href="about.asp">lesson4</a> </ li>
+                  <li> Lesson 1: { topics.lesson1 }   </ li>
+                  <li> Lesson 2: { topics.lesson2 }   </ li>
+                  <li> Lesson 3: { topics.lesson3 }   </ li>
+                  <li> Lesson 4: { topics.lesson4 }   </ li>
+                  <li>  { topics.test }   </ li>
                 </ul>
               </div>
 
@@ -97,28 +98,34 @@ class Index extends React.Component {
        < /div>
        <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design components in { new Date().getFullYear() }  </ Typography>
             <p> </ p>
-            <div> <Button style={{width: 150, height: 50}} variant="raised" color="primary" onClick={this.handleClick} > Introduction </ Button> </ div>
+            <div> <Button style={{width: 140, height: 40}} variant="raised" color="primary" onClick={this.handleClick} > Introduction </ Button> </ div>
             <p> </ p>
-            <div> <Button style={{width: 100, height: 50}} variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </ Button>   </ div> 
+            <div> <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 1 </ Button> </ div> 
             <p> </ p>
-            <div> <Button style={{width: 100, height: 50}} variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </ Button>   </ div> 
+            <div> <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 2 </ Button>  </ div> 
             <p> </ p>
-            <div> <Button style={{width: 100, height: 50}} variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </ Button>   </ div>
+            <div> <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 3 </ Button>  </ div>
             <p> </ p>
-            <div> <Button style={{width: 100, height: 50}} variant="raised" color="primary" onClick={this.handleClick}> Test </Button> </ div>
+            <div> <Button style={{width: 100, height: 40}} variant="raised" color="primary" href="default.asp"> Test </ Button> </ div>
             <p> </ p>
-            <div> 
-            <Button style={{width: 130, height: 50}} variant="raised" onClick={ this.handleClick }> Next Course </ Button>     
-            <div>
-            <p> </ p>
-            <Button style={{width: 130, height: 50}} onClick={ this.handleClick }> { help } </ Button>      
-            </ div>
-            </ div>
+              <div>  <Button style={{width: 130, height: 40}} variant="raised" href="default.asp"> Next Course </ Button> 
+                <div>
+                <p> </ p>
+                <Button style={{width: 130, height: 40}} href="default.asp"> { help } </ Button>      
+                </ div>
+              </ div>
             <br></ br><br></ br>
-            <h4> Search or a topic: </ h4>
+            <br></ br><br></ br>
+              <h4> Search topics: </ h4>
 
-            <input type="text" value={ this.state.query } />
-            <button onClick={ this.handleClick } className="button"> Search </ button>
+              <form>
+               <input
+                 placeholder="Search for..."
+                 ref={input => this.search = input}
+                 onChange={this.handleInputChange}
+               />
+               <p> {this.state.query} </ p>
+             </ form>
 
             <div>
               <h5> { footerCurrent } </ h5>

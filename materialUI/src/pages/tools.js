@@ -21,7 +21,8 @@ export const topics = {
   lesson1: 'Elements',
   lesson2: 'Components',
   lesson3: 'Text Fields',
-  lesson4: 'Buttons'
+  lesson4: 'Buttons',
+  test: 'Test Your Knowledge'
 };
 
 export function formatName(user) {
