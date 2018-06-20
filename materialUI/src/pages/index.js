@@ -89,7 +89,7 @@ class Index extends React.Component {
           </ DialogActions>
         </ Dialog>
       <Typography variant="display1" gutterBottom> {user.level} React JavaScript App < /Typography> 
-       <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design components in { new Date().getFullYear() }  </ Typography>
+       <Typography variant="subheading" gutterBottom> Implementing Material UI Design components by Google in { new Date().getFullYear() } </ Typography>
           <p> </ p>
           <Button style={{width: 140, height: 40}} variant="raised" color="primary" onClick={this.handleClick} > Introduction </ Button>
           <p> </ p>
