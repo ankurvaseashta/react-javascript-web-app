@@ -3,16 +3,28 @@
 ///////////////
 
 .space{
-
   background: #eee;
-  padding: 20px;,
-  margin: 20px;
-
+  padding: 1px;,
+  margin: 1px;
 }
 
 .button {
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    padding: 8;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
 
-  border-radius: 10px;
-  background-color: LightGrey;
-  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

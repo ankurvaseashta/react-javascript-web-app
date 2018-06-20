@@ -78,10 +78,10 @@ class Index extends React.Component {
               <div className="topics-list">
                 <h3>List of topics:</ h3>
                 <ul>
-                  <li> { topics.lesson1 } </ li>
-                  <li> { topics.lesson2 } </ li>
-                  <li> { topics.lesson3 } </ li>
-                  <li> { topics.lesson4 } </ li>
+                  <li> { topics.lesson1 } <a href="default.asp">lesson1</a> </ li>
+                  <li> { topics.lesson2 } <a href="news.asp">lesson2</a> </ li>
+                  <li> { topics.lesson3 } <a href="contact.asp">lesson3</a> </ li>
+                  <li> { topics.lesson4 } <a href="about.asp">lesson4</a> </ li>
                 </ul>
               </div>
 
@@ -105,22 +105,23 @@ class Index extends React.Component {
             <p> </ p>
             <div> <Button style={{width: 100, height: 50}} variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </ Button>   </ div>
             <p> </ p>
-            <div> <Button style={{width: 150, height: 50}} variant="raised" color="primary" onClick={this.handleClick}> Test </Button> </ div>
-            <p> </ p>
-            <div className="space"> <button className="button" > <p> Test Me </ p> </button> </ div>
+            <div> <Button style={{width: 100, height: 50}} variant="raised" color="primary" onClick={this.handleClick}> Test </Button> </ div>
             <p> </ p>
             <div> 
-            <Button style={{width: 150, height: 50}} variant="raised" onClick={ this.handleClick }> Next Course </ Button>     
+            <Button style={{width: 130, height: 50}} variant="raised" onClick={ this.handleClick }> Next Course </ Button>     
             <div>
-            <Button style={{width: 150, height: 50}} onClick={ this.handleClick }> { help } </ Button>      
+            <p> </ p>
+            <Button style={{width: 130, height: 50}} onClick={ this.handleClick }> { help } </ Button>      
             </ div>
             </ div>
-            <br></ br><br></ br><br></ br><br></ br>
+            <br></ br><br></ br>
             <h4> Search or a topic: </ h4>
+
             <input type="text" value={ this.state.query } />
             <button onClick={ this.handleClick } className="button"> Search </ button>
+
             <div>
-            <p> { footerCurrent } </p>
+              <h5> { footerCurrent } </ h5>
             </ div>
           </ div>
       );//End return
