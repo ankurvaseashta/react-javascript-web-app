@@ -116,7 +116,7 @@ class Index extends React.Component {
          <br></ br><br></ br>
          <br></ br><br></ br>
          <h5> { footerCurrent } </ h5>
-         <Button class="button" style={{width: 130, height: 40}} href="default.asp"> { help } </ Button>
+         <Button class="buttonHelp" style={{width: 130, height: 40}} href="default.asp"> { help } </ Button>
       </ div>
       );
     }

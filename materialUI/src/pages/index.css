@@ -8,10 +8,27 @@
   margin: 1px;
 }
 
-.button {
+.button{
     background-color: #d7dae0;
     border: 1px solid #051f49;
     color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 6px;
+    margin-left: 600px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonHelp {
+    background-color: #520d66;
+    border: 1px solid #051f49;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
