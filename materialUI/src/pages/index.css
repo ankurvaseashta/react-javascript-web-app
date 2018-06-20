@@ -3,13 +3,16 @@
 ///////////////
 
 .space{
-	margin-bottom: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 10px; 
+
+  background: #eee;
+  padding: 20px;,
+  margin: 20px;
+
 }
 
 .button {
+
   border-radius: 10px;
   background-color: LightGrey;
+  
 }

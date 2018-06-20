@@ -46,11 +46,12 @@ function withRoot(Component) {
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <Component {...props} />
-      </MuiThemeProvider>
+      </ MuiThemeProvider>
     );
   }
 
   return WithRoot;
 }
+
 
 export default withRoot;

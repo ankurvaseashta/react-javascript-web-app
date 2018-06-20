@@ -16,7 +16,8 @@ import { methods }  from '../pages/tools';
 import { help }  from '../pages/tools';
 import { footer }  from '../pages/tools';
 import { currentTime }  from '../pages/tools';
-import { start }  from '../pages/tools';
+//import { start }  from '../pages/tools';
+import { TodoApp }  from '../pages/lessonone';
 
 /*
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
@@ -95,24 +96,26 @@ class Index extends React.Component {
         <Typography variant="display1" gutterBottom> {user.level} React JavaScript App < /Typography> 
        < /div>
        <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design components in { new Date().getFullYear() }  </ Typography>
-           
-          <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Introduction </ Button> <br></br> </ div>
-            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </ Button> <br></br> </ div>            
-            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </ Button> <br></br> </ div>           
-            <div> <br></ br> <Button variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </ Button> <br></br> </ div>
-            <div> <br></ br> <Button variant="raised" color="primary" onClick={this.handleClick}> Test </Button> <br></ br> </ div>
-           
-            <div className="space"> <button className="button"> Test Me </button> </ div>
-            
-            <br></ br><br></ br><br></ br><br></ br>
-            
+            <p> </ p>
+            <div> <Button style={{width: 150, height: 50}} variant="raised" color="primary" onClick={this.handleClick} > Introduction </ Button> </ div>
+            <p> </ p>
+            <div> <Button style={{width: 100, height: 50}} variant="raised" color="secondary" onClick={this.handleClick}> Lesson 1 </ Button>   </ div> 
+            <p> </ p>
+            <div> <Button style={{width: 100, height: 50}} variant="raised" color="secondary" onClick={this.handleClick}> Lesson 2 </ Button>   </ div> 
+            <p> </ p>
+            <div> <Button style={{width: 100, height: 50}} variant="raised" color="secondary" onClick={this.handleClick}> Lesson 3 </ Button>   </ div>
+            <p> </ p>
+            <div> <Button style={{width: 150, height: 50}} variant="raised" color="primary" onClick={this.handleClick}> Test </Button> </ div>
+            <p> </ p>
+            <div className="space"> <button className="button" > <p> Test Me </ p> </button> </ div>
+            <p> </ p>
             <div> 
-              <Button variant="raised" onClick={ this.handleClick }> Next Course </ Button> <br></ br> <br></ br>     
-              <div>
-              <Button onClick={ this.handleClick }> { help } </ Button>      
-              </ div>
+            <Button style={{width: 150, height: 50}} variant="raised" onClick={ this.handleClick }> Next Course </ Button>     
+            <div>
+            <Button style={{width: 150, height: 50}} onClick={ this.handleClick }> { help } </ Button>      
             </ div>
-          <br></ br><br></ br><br></ br><br></ br> <br></ br><br></ br><br></ br><br></ br> 
+            </ div>
+            <br></ br><br></ br><br></ br><br></ br>
             <h4> Search or a topic: </ h4>
             <input type="text" value={ this.state.query } />
             <button onClick={ this.handleClick } className="button"> Search </ button>
