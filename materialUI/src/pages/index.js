@@ -53,6 +53,16 @@ class Index extends React.Component {
     });
   };
 
+  handleInputChange = () => {
+    this.setState({
+      query: this.search.value
+    }, () => {
+      if (this.state.query && this.state.query.length > 1) {
+        //this.getInfo();
+      } 
+    })
+  }
+
   render() {
     
     const { classes } = this.props;
@@ -100,7 +110,7 @@ class Index extends React.Component {
             <p> </ p>
             <div> <Button style={{width: 140, height: 40}} variant="raised" color="primary" onClick={this.handleClick} > Introduction </ Button> </ div>
             <p> </ p>
-            <div> <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 1 </ Button> </ div> 
+            <div> <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp">Lesson 1 </ Button> </ div> 
             <p> </ p>
             <div> <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 2 </ Button>  </ div> 
             <p> </ p>
@@ -108,27 +118,21 @@ class Index extends React.Component {
             <p> </ p>
             <div> <Button style={{width: 100, height: 40}} variant="raised" color="primary" href="default.asp"> Test </ Button> </ div>
             <p> </ p>
-              <div>  <Button style={{width: 130, height: 40}} variant="raised" href="default.asp"> Next Course </ Button> 
-                <div>
-                <p> </ p>
-                <Button style={{width: 130, height: 40}} href="default.asp"> { help } </ Button>      
-                </ div>
-              </ div>
-            <br></ br><br></ br>
+            <div>  <Button style={{width: 130, height: 40}} variant="raised" href="default.asp"> Next Course </ Button> </ div>
             <br></ br><br></ br>
               <h4> Search topics: </ h4>
-
-              <form>
-               <input
-                 placeholder="Search for..."
-                 ref={input => this.search = input}
-                 onChange={this.handleInputChange}
-               />
-               <p> {this.state.query} </ p>
-             </ form>
-
+            <form>
+             <input
+               placeholder="Search for..."
+               ref={input => this.search = input}
+               onChange={this.handleInputChange}
+             />
+             <p> {this.state.query} </ p>
+           </ form>
+            <br></ br><br></ br>
             <div>
               <h5> { footerCurrent } </ h5>
+              <Button class="button" style={{width: 130, height: 40}} href="default.asp"> { help } </ Button>      
             </ div>
           </ div>
       );//End return
