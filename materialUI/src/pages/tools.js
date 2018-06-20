@@ -47,7 +47,7 @@ export var methods = {
 };
 
 export function currentTime() {
-   const theTime = "The current local time is " + methods.localeTime();
+   const theTime = " it's " + methods.localeTime();
    return theTime;
  }
 
