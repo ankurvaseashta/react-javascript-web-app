@@ -53,16 +53,12 @@ class Index extends React.Component {
     });
   };
 
-  handleInputChange = () => {
-    this.setState({
-      query: this.search.value
-    }, () => {
-      if (this.state.query && this.state.query.length > 1) {
-        //this.getInfo();
-      } 
-    })
-  }
-
+ handleInputChange = () => {
+   this.setState({
+     query: this.search.value
+   })
+ }
+ 
   render() {
     
     const { classes } = this.props;
