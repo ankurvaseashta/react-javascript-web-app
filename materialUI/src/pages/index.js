@@ -100,23 +100,19 @@ class Index extends React.Component {
           <p> </ p>
           <Button class="buttonLessonThree" style={{width: 100, height: 40}} href="default.asp"> Lesson 3 </ Button>
           <a> </ a>
-          <Button class="buttonLessonFour" style={{width: 100, height: 40}} onClick={ Test } href="default.asp"> Lesson 4 </ Button>
+          <Button class="buttonLessonFour" style={{width: 100, height: 40}}  href="default.asp"> Lesson 4 </ Button>
           <p> </ p>
-          <Button class="buttonLesson" style={{width: 100, height: 40}} onClick={ Test } > Test </ Button>
+          <Button class="buttonTest" style={{width: 100, height: 40}} onClick={ Test } > Test </ Button>
           <p> </ p>
-          <Button class ="buttonNext" style={{width: 130, height: 40}} variant="raised" href="default.asp"> Next Course </ Button>
-          <br></ br><br></ br>
-            <h3> Search topics: </ h3>
-         <form>
-           <input
-             placeholder="Search for..."
-             ref={input => this.search = input}
-             onChange={ this.handleInputChange } />
-           <p> {this.state.query} </ p>
-         </ form>
-         <br></ br><br></ br>
-         <br></ br><br></ br>
-         <br></ br><br></ br>
+            <h4> In a hurry? Try quick search: </ h4>
+             <form>
+               <input
+                 placeholder="Search for..."
+                 ref={input => this.search = input}
+                 onChange={ this.handleInputChange } />
+               <p> {this.state.query} </ p>
+             </ form>
+            <Button class ="buttonNext" style={{width: 130, height: 40}} variant="raised" href="default.asp"> Next Course </ Button>
          <h5> { footerCurrent } </ h5>
          <Button class="buttonHelp" style={{width: 130, height: 40}} href="default.asp"> { help } </ Button>
       </ div>
