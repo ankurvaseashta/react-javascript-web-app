@@ -52,6 +52,6 @@ export function currentTime() {
  }
 
 export function footer() {
-  const note = formatName(user) + " viewed this page at " + methods.localeTime() + " on " + methods.localetDate() +".";
+  const note = formatName(user) + " last viewed this page at " + methods.localeTime() + " on " + methods.localetDate() +".";
   return note;
 }

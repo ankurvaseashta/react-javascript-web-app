@@ -1,16 +1,25 @@
-////////////////
-//// CSS ///////
-///////////////
+/* CSS */
 
-.space{
-  background: #eee;
-  padding: 1px;,
-  margin: 1px;
+.buttonIntro{
+    background-color: #4bbc64;
+    border: 1px solid #051f49;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.button{
+.buttonHelp{
     background-color: #d7dae0;
-    border: 1px solid #051f49;
+    border: 2px solid #051f49;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -25,9 +34,9 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.buttonHelp {
-    background-color: #520d66;
-    border: 1px solid #051f49;
+.buttonNext {
+    background-color: #2d033a;
+    border: 2px solid #051f49;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -37,6 +46,91 @@
     padding: 6px;
     margin-left: 600px;
     margin-right: 0px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonLesson{
+    background-color: #7518af;
+    border: 2px solid #051f49;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonLessonOne{
+    background-color: #7518af;
+    border: 2px solid #051f49;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 6px;
+    margin-left: 0px;
+    margin-right: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonLessonTwo{
+    background-color: #7518af;
+    border: 2px solid #051f49;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 6px;
+    margin-left: 0px;
+    margin-right: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonLessonThree{
+    background-color: #7518af;
+    border: 2px solid #051f49;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 6px;
+    margin-left: 0px;
+    margin-right: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonLessonFour{
+    background-color: #7518af;
+    border: 2px solid #051f49;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 6px;
+    margin-left: 0px;
+    margin-right: 600px;
     margin-top: 0px;
     margin-bottom: 0px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -46,8 +140,8 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
 
+}
 a {
     color: black;
 }
@@ -70,4 +164,10 @@ h3 {
 h4 {
     color: black;
     text-align: left;
+}
+
+.space{
+  background: #eee;
+  padding: 1px;,
+  margin: 1px;
 }

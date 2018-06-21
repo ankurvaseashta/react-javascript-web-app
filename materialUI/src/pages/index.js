@@ -88,22 +88,22 @@ class Index extends React.Component {
             <Button color="primary" onClick={this.handleClose}> OK </ Button>
           </ DialogActions>
         </ Dialog>
-      <Typography variant="display1" gutterBottom> {user.level} React JavaScript App < /Typography> 
+      <Typography variant="display1" gutterBottom> {user.level} React JavaScript App </ Typography> 
        <Typography variant="subheading" gutterBottom> Implementing Material UI Design components by Google in { new Date().getFullYear() } </ Typography>
           <p> </ p>
-          <Button style={{width: 140, height: 40}} variant="raised" color="primary" onClick={this.handleClick} > Introduction </ Button>
+          <Button class="buttonIntro" style={{width: 140, height: 40}} variant="raised" color="primary" onClick={this.handleClick} > Introduction </ Button>
           <p> </ p>
-          <Button style={{width: 100, height: 40}} variant="raised" color="secondary" onClick={ LessonOne } > Lesson 1 </ Button>
+          <Button class="buttonLessonOne" style={{width: 100, height: 40}} variant="raised" color="secondary" onClick={ LessonOne } > Lesson 1 </ Button>
           <p> </ p>
-          <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 2 </ Button> 
+          <Button class="buttonLessonTwo" style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 2 </ Button> 
           <p> </ p>
-          <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 3 </ Button>
+          <Button class="buttonLessonThree" style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 3 </ Button>
           <p> </ p>
-          <Button style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 4 </ Button>
+          <Button class="buttonLessonFour" style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 4 </ Button>
           <p> </ p>
-          <Button style={{width: 100, height: 40}} variant="raised" color="primary" href="default.asp"> Test </ Button>
+          <Button class="buttonLesson" style={{width: 100, height: 40}} variant="raised" color="primary" href="default.asp"> Test </ Button>
           <p> </ p>
-          <Button style={{width: 130, height: 40}} variant="raised" class ="button "href="default.asp"> Next Course </ Button>
+          <Button style={{width: 130, height: 40}} variant="raised" class ="buttonNext" href="default.asp"> Next Course </ Button>
           <br></ br><br></ br>
             <h3> Search topics: </ h3>
          <form>
@@ -113,6 +113,7 @@ class Index extends React.Component {
              onChange={ this.handleInputChange } />
            <p> {this.state.query} </ p>
          </ form>
+         <br></ br><br></ br>
          <br></ br><br></ br>
          <br></ br><br></ br>
          <h5> { footerCurrent } </ h5>
