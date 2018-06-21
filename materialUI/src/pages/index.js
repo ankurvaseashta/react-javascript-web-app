@@ -95,11 +95,11 @@ class Index extends React.Component {
           <Button class="buttonIntro" style={{width: 140, height: 40}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
           <p> </ p>
           <Button class="buttonLessonOne" style={{width: 100, height: 40}} onClick={ LessonOne } > Lesson 1 </ Button>
-          <p> </ p>
+          <a> </ a>
           <Button class="buttonLessonTwo" style={{width: 100, height: 40}} href="default.asp"> Lesson 2 </ Button> 
           <p> </ p>
           <Button class="buttonLessonThree" style={{width: 100, height: 40}} href="default.asp"> Lesson 3 </ Button>
-          <p> </ p>
+          <a> </ a>
           <Button class="buttonLessonFour" style={{width: 100, height: 40}} onClick={ Test } href="default.asp"> Lesson 4 </ Button>
           <p> </ p>
           <Button class="buttonLesson" style={{width: 100, height: 40}} onClick={ Test } > Test </ Button>
