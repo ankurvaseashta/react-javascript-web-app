@@ -18,6 +18,7 @@ import { footer }  from '../pages/tools';
 import { currentTime }  from '../pages/tools';
 //import { start }  from '../pages/tools';
 import { LessonOne }  from '../pages/lessonone';
+import { Test }  from '../pages/test';
 
 /*
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
@@ -91,19 +92,19 @@ class Index extends React.Component {
       <Typography variant="display1" gutterBottom> {user.level} React JavaScript App </ Typography> 
        <Typography variant="subheading" gutterBottom> Implementing Material UI Design components by Google in { new Date().getFullYear() } </ Typography>
           <p> </ p>
-          <Button class="buttonIntro" style={{width: 140, height: 40}} variant="raised" color="primary" onClick={this.handleClick} > Introduction </ Button>
+          <Button class="buttonIntro" style={{width: 140, height: 40}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
           <p> </ p>
-          <Button class="buttonLessonOne" style={{width: 100, height: 40}} variant="raised" color="secondary" onClick={ LessonOne } > Lesson 1 </ Button>
+          <Button class="buttonLessonOne" style={{width: 100, height: 40}} onClick={ LessonOne } > Lesson 1 </ Button>
           <p> </ p>
-          <Button class="buttonLessonTwo" style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 2 </ Button> 
+          <Button class="buttonLessonTwo" style={{width: 100, height: 40}} href="default.asp"> Lesson 2 </ Button> 
           <p> </ p>
-          <Button class="buttonLessonThree" style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 3 </ Button>
+          <Button class="buttonLessonThree" style={{width: 100, height: 40}} href="default.asp"> Lesson 3 </ Button>
           <p> </ p>
-          <Button class="buttonLessonFour" style={{width: 100, height: 40}} variant="raised" color="secondary" href="default.asp"> Lesson 4 </ Button>
+          <Button class="buttonLessonFour" style={{width: 100, height: 40}} onClick={ Test } href="default.asp"> Lesson 4 </ Button>
           <p> </ p>
-          <Button class="buttonLesson" style={{width: 100, height: 40}} variant="raised" color="primary" href="default.asp"> Test </ Button>
+          <Button class="buttonLesson" style={{width: 100, height: 40}} onClick={ Test } > Test </ Button>
           <p> </ p>
-          <Button style={{width: 130, height: 40}} variant="raised" class ="buttonNext" href="default.asp"> Next Course </ Button>
+          <Button class ="buttonNext" style={{width: 130, height: 40}} variant="raised" href="default.asp"> Next Course </ Button>
           <br></ br><br></ br>
             <h3> Search topics: </ h3>
          <form>

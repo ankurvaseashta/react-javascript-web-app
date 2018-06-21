@@ -1,9 +1,9 @@
 /* CSS */
 
 .buttonIntro{
-    background-color: #4bbc64;
-    border: 1px solid #051f49;
-    color: black;
+    background-color: white;
+    border: 2px solid #051f49;
+    color: #7518af;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -35,7 +35,7 @@
 }
 
 .buttonNext {
-    background-color: #2d033a;
+    background-color: #28073a;
     border: 2px solid #051f49;
     color: white;
     text-align: center;
