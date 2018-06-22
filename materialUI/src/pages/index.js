@@ -18,6 +18,9 @@ import { footer }  from '../pages/tools';
 import { currentTime }  from '../pages/tools';
 //import { start }  from '../pages/tools';
 import { LessonOne }  from '../pages/lessonone';
+import { LessonTwo }  from '../pages/lessontwo';
+import { LessonThree }  from '../pages/lessonthree';
+import { LessonFour }  from '../pages/lessonfour';
 import { Test }  from '../pages/test';
 
 /*
@@ -94,13 +97,13 @@ class Index extends React.Component {
           <p> </ p>
           <Button class="buttonIntro" style={{width: 140, height: 40}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
           <p> </ p>
-          <Button class="buttonLessonOne" style={{width: 100, height: 40}} onClick={ LessonOne } > Lesson 1 </ Button>
+          <Button class="buttonLessonOne" style={{width: 120, height: 80}} onClick={ LessonOne } > Lesson 1 </ Button>
           <a> </ a>
-          <Button class="buttonLessonTwo" style={{width: 100, height: 40}} href="default.asp"> Lesson 2 </ Button> 
+          <Button class="buttonLessonTwo" style={{width: 120, height: 80}} onClick={ LessonTwo } > Lesson 2 </ Button> 
           <p> </ p>
-          <Button class="buttonLessonThree" style={{width: 100, height: 40}} href="default.asp"> Lesson 3 </ Button>
+          <Button class="buttonLessonThree" style={{width: 120, height: 80}} onClick={ LessonThree } > Lesson 3 </ Button>
           <a> </ a>
-          <Button class="buttonLessonFour" style={{width: 100, height: 40}}  href="default.asp"> Lesson 4 </ Button>
+          <Button class="buttonLessonFour" style={{width: 120, height: 80}}  onClick={ LessonFour } > Lesson 4 </ Button>
           <p> </ p>
           <Button class="buttonTest" style={{width: 100, height: 40}} onClick={ Test } > Test </ Button>
           <p> </ p>
@@ -112,9 +115,9 @@ class Index extends React.Component {
                  onChange={ this.handleInputChange } />
                <p> {this.state.query} </ p>
              </ form>
-            <Button class ="buttonNext" style={{width: 130, height: 40}} variant="raised" href="default.asp"> Next Course </ Button>
+            <Button class ="buttonNext" style={{width: 130, height: 40}} variant="raised" href="courses.asp"> Next Course </ Button>
          <h5> { footerCurrent } </ h5>
-         <Button class="buttonHelp" style={{width: 130, height: 40}} href="default.asp"> { help } </ Button>
+         <Button class="buttonHelp" style={{width: 130, height: 40}} href="help.asp"> { help } </ Button>
       </ div>
       );
     }
