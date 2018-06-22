@@ -97,15 +97,15 @@ class Index extends React.Component {
           <p> </ p>
           <Button class="buttonIntro" style={{width: 140, height: 40}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
           <p> </ p>
-          <Button class="buttonLessonOne" style={{width: 120, height: 80}} onClick={ LessonOne } > Lesson 1 </ Button>
+          <Button class="buttonLessonOne" style={{width: 120, height: 80}} variant="raised" onClick={ LessonOne } > Lesson 1 </ Button>
           <a> </ a>
-          <Button class="buttonLessonTwo" style={{width: 120, height: 80}} onClick={ LessonTwo } > Lesson 2 </ Button> 
+          <Button class="buttonLessonTwo" style={{width: 120, height: 80}} variant="raised" onClick={ LessonTwo } > Lesson 2 </ Button> 
           <p> </ p>
-          <Button class="buttonLessonThree" style={{width: 120, height: 80}} onClick={ LessonThree } > Lesson 3 </ Button>
+          <Button class="buttonLessonThree" style={{width: 120, height: 80}} variant="raised" onClick={ LessonThree } > Lesson 3 </ Button>
           <a> </ a>
-          <Button class="buttonLessonFour" style={{width: 120, height: 80}}  onClick={ LessonFour } > Lesson 4 </ Button>
+          <Button class="buttonLessonFour" style={{width: 120, height: 80}}  variant="raised" onClick={ LessonFour } > Lesson 4 </ Button>
           <p> </ p>
-          <Button class="buttonTest" style={{width: 100, height: 40}} onClick={ Test } > Test </ Button>
+          <Button class="buttonTest" style={{width: 100, height: 40}} variant="raised" onClick={ Test } > Test </ Button>
           <p> </ p>
             <h4> In a hurry? Try quick search: </ h4>
              <form>
@@ -117,7 +117,7 @@ class Index extends React.Component {
              </ form>
             <Button class ="buttonNext" style={{width: 130, height: 40}} variant="raised" href="courses.asp"> Next Course </ Button>
          <h5> { footerCurrent } </ h5>
-         <Button class="buttonHelp" style={{width: 130, height: 40}} href="help.asp"> { help } </ Button>
+         <Button class="buttonHelp" style={{width: 130, height: 40}} variant="raised" href="help.asp"> { help } </ Button>
       </ div>
       );
     }
