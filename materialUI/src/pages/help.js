@@ -16,12 +16,6 @@ Comments: Level {} React JavaScript App: Implementing Google's Material UI Desig
 
 export const help = "Need Help ?";
 
-export const testMeElement = React.createElement(
-  'h1',
-  {className: 'testMe'},
-  'Test me!'
-);
-
 const styles = theme => ({
   root: {
     textAlign: 'center',
@@ -60,7 +54,7 @@ class Help extends React.Component {
     return (
      <div className={ classes.root }>
        <Dialog open={ open } onClose={ this.handleClose }>
-        <DialogTitle> Web Application Development </ DialogTitle>  
+        <DialogTitle> Help </ DialogTitle>  
            <DialogContent> 
              <DialogContentText>
               <p> 
