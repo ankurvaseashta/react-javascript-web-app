@@ -1,15 +1,14 @@
+import React from 'react';
 import './index.js';
 import './index.css';
 
 /*
-Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
+Comments: Level {} React JavaScript App: Implementing Google's Material UI Design in 2018
 */
 
 export function start(){
      return alert("Are you ready to start?")     
 }
-
-export const help = "Need Help ?";
 
 export const user = {  
   firstName: 'Buddy',
@@ -55,3 +54,9 @@ export function footer() {
   const note = formatName(user) + " last viewed this page at " + methods.localeTime() + " on " + methods.localetDate() +".";
   return note;
 }
+
+export const testMeElement = React.createElement(
+  'h1',
+  {className: 'testMe'},
+  'Test me!'
+);
