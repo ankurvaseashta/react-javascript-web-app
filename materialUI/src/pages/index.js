@@ -69,7 +69,7 @@ class Index extends React.Component {
     const { classes } = this.props;
     const { open } = this.state;
 
-    return (// Start return
+    return (
       <div className={ classes.root }>
         <Dialog open={ open } onClose={ this.handleClose }>
           <DialogTitle> Web Application Development </ DialogTitle>  
@@ -125,7 +125,7 @@ class Index extends React.Component {
         </ div>
     );
   }
-} //End render
+}
 
 Index.propTypes = {
   classes: PropTypes.object.isRequired,
