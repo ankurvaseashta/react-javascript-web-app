@@ -91,7 +91,7 @@ class Index extends React.Component {
     const isLoggedIn = this.state.isLoggedIn;
     let button;
   
-    if (isLoggedIn) {
+    if (!isLoggedIn) {
       button = <LogoutButton onClick={this.handleLogoutClick} />;
     } else {
       button = <LoginButton onClick={this.handleLoginClick} />
@@ -99,11 +99,8 @@ class Index extends React.Component {
 
     return (    
             <div>
-
-            <Button class="buttonLogin" style={{width: 100, height: 40}} variant="raised" > Log in </ Button>
-
-            <a className="deepIndent"> {user.firstName} is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. </ a>
-            <Greeting isLoggedIn={isLoggedIn} />
+            <a className="deepIndent"> {user.firstName} is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. {button} </ a>
+            <Greeting isLoggedIn={isLoggedIn} /> 
               <div className={ classes.root }>
                 <Dialog open={ open } onClose={ this.handleClose }>
                   <DialogTitle> Web Application Development </ DialogTitle>  

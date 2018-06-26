@@ -60,7 +60,7 @@ export function UserGreeting(props) {
 }
 
 export function GuestGreeting(props) {
-  return <h3>Please sign in.</h3>;
+  return <h3>Please log in.</h3>;
 }
 
 export function Greeting(props) {
@@ -68,21 +68,17 @@ export function Greeting(props) {
   if (isLoggedIn) {
     return <UserGreeting />;
   }
-  return <GuestGreeting />;
+    return <GuestGreeting />;
 }
 
 export function LoginButton(props) {
   return (
-    <button onClick={props.onClick}>
-      Login
-    </button>
+    <button onClick={props.onClick}> Logout </button>
   );
 }
 
 export function LogoutButton(props) {
   return (
-    <button onClick={props.onClick}>
-      Logout
-    </button>
+    <button className="indent" onClick={props.onClick}> Login </button>
   );
 }
