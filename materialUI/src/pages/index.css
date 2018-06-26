@@ -49,15 +49,15 @@ h5 {
 .indent{
     margin-left: 25px;
     margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .deepIndent{
     margin-left: 50px;
     margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .buttonIntro{

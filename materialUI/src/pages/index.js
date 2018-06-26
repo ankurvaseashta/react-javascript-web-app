@@ -79,7 +79,7 @@ class Index extends React.Component {
               </ p> 
            </ DialogContentText>
               <div>
-                <a className="indent"> List of topics: </ a>
+                <a className="indent"> <b> List of topics: </ b> </ a>
                 <ul className="deepIndent">
                   <li> Lesson 1: { topics.lesson1 }   </ li>
                   <li> Lesson 2: { topics.lesson2 }   </ li>

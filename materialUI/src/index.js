@@ -10,8 +10,6 @@ ReactDOM.render(
 	<Index />,
 	document.querySelector('#root'), 
 	document.getElementById('#root'), 
-	document.getElementById('container'),
-	document.getElementsByTagName("h1"),
 	);
 
 } else {
