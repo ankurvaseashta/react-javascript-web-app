@@ -54,9 +54,35 @@ export function footer() {
   const note = formatName(user) + " last viewed this page at " + methods.localeTime() + " on " + methods.localetDate() +".";
   return note;
 }
+///TRY ME
+export function UserGreeting(props) {
+  return <h2> Welcome back! </h2>;
+}
 
-export const testMeElement = React.createElement(
-  'h1',
-  {className: 'testMe'},
-  'Test me!'
-);
+export function GuestGreeting(props) {
+  return <h1>Please sign up.</h1>;
+}
+
+export function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+}
+
+export function LoginButton(props) {
+  return (
+    <button onClick={props.onClick}>
+      Login
+    </button>
+  );
+}
+
+export function LogoutButton(props) {
+  return (
+    <button onClick={props.onClick}>
+      Logout
+    </button>
+  );
+}

@@ -9,7 +9,7 @@ if( true ){
 ReactDOM.render(
 	<Index />,
 	document.querySelector('#root'), 
-	document.getElementById('#root'), 
+	document.getElementById('#root'),
 	);
 
 } else {

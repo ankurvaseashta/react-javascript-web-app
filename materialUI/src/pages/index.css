@@ -63,7 +63,7 @@ h5 {
 .buttonIntro{
     background-color: white;
     border: 2px solid #7518af;
-    color: #330744;
+    color: #7518af;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -80,7 +80,7 @@ h5 {
 .buttonHelp{
     background-color: #d7dae0;
     border: 2px solid #7518af;
-    color: #330744;
+    color: black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -89,7 +89,7 @@ h5 {
     padding: 6px;
     margin-left: 700px;
     margin-right: 0px;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 0px;
     box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -97,7 +97,7 @@ h5 {
 .buttonNext {
     background-color: #d7dae0;
     border: 2px solid #7518af;
-    color: #330744;
+    color: #7518af;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -114,7 +114,7 @@ h5 {
 .buttonTest{
     background-color: white;
     border: 2px solid #7518af;
-    color: #330744;
+    color: #7518af;
     text-align: center;
     text-decoration: none;
     display: inline-block;

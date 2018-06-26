@@ -17,12 +17,17 @@ import { methods }  from '../pages/tools';
 import { footer }  from '../pages/tools';
 import { currentTime }  from '../pages/tools';
 import { Test }  from '../pages/test';
-//import { start }  from '../pages/tools';
+ // eslint-disable-next-line
+import { start }  from '../pages/tools';
 import { LessonOne }  from '../pages/lessonone';
 import { LessonTwo }  from '../pages/lessontwo';
 import { LessonThree }  from '../pages/lessonthree';
 import { LessonFour }  from '../pages/lessonfour';
 
+
+import { LogoutButton }  from '../pages/tools';
+import { LoginButton }  from '../pages/tools';
+import { Greeting }  from '../pages/tools';
 
 /*
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
@@ -40,6 +45,42 @@ const styles = theme => ({
     paddingTop: theme.spacing.unit * 5,
     backgroundSize: 'cover,'  },
 });
+
+class LoginControl extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleLogoutClick = this.handleLogoutClick.bind(this);
+    this.state = {isLoggedIn: false};
+  }
+
+  handleLoginClick() {
+    this.setState({isLoggedIn: true});
+  }
+
+  handleLogoutClick() {
+    this.setState({isLoggedIn: false});
+  }
+
+  // render() {
+  //   const isLoggedIn = this.state.isLoggedIn;
+  //   let button;
+
+  //   if (isLoggedIn) {
+  //     button = <LogoutButton onClick={this.handleLogoutClick} />;
+  //   } else {
+  //     button = <LoginButton onClick={this.handleLoginClick} />
+  //   }
+
+  //   return (
+  //     <div>
+  //       <Greeting isLoggedIn={isLoggedIn} />
+  //       {button}
+  //     </div>
+  //   );
+  // }
+}
+
 
 class Index extends React.Component {
   state = {
@@ -68,9 +109,11 @@ class Index extends React.Component {
     
     const { classes } = this.props;
     const { open } = this.state;
-
+    const isLoggedIn = this.state;
+  
     return (    
             <div>
+             <a> {user.firstName} is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. </ a>
               <div className={ classes.root }>
                 <Dialog open={ open } onClose={ this.handleClose }>
                   <DialogTitle> Web Application Development </ DialogTitle>  
@@ -88,7 +131,7 @@ class Index extends React.Component {
                         <li> <b> Lesson 2: </ b> { topics.lesson2 }   </ li>
                         <li> <b> Lesson 3: </ b> { topics.lesson3 }   </ li>
                         <li> <b> Lesson 4: </ b> { topics.lesson4 }   </ li>
-                        <li> <b> Test:  </ b> { topics.test }   </ li>
+                        <li> <b> Quiz:  </ b> { topics.test }   </ li>
                         </ ul>
                       </ div>
                     </ DialogContent>
@@ -97,45 +140,45 @@ class Index extends React.Component {
                   </ DialogActions>
                 </ Dialog>
 
-                  <div>
-                    <body>
-                    <Typography variant="display1" gutterBottom> <a> {user.level} React JavaScript App </ a> </ Typography>
-                    <Typography variant="subheading" gutterBottom> Implementing Material UI Design components by Google in { new Date().getFullYear() } </ Typography>
+                <div>
+                  <body>
+                  <Typography variant="display1" gutterBottom> <a> {user.level} React JavaScript App </ a> </ Typography>
+                  <Typography variant="subheading" gutterBottom> Implementing Material UI Design components by Google in { new Date().getFullYear() } </ Typography>
+
+                    <Greeting isLoggedIn={isLoggedIn}/>
+
                     <Button class="buttonIntro" style={{width: 140, height: 40}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
+                    <p> </ p>
+                    <Button class="buttonLessonOne" style={{width: 120, height: 70}} variant="raised" onClick={ LessonOne } > Lesson 1 </ Button>
+                    <a> </ a>
+                    <Button class="buttonLessonTwo" style={{width: 120, height: 70}} variant="raised" onClick={ LessonTwo } > Lesson 2 </ Button> 
+                    <p> </ p>
+                    <Button class="buttonLessonThree" style={{width: 120, height: 70}} variant="raised" onClick={ LessonThree } > Lesson 3 </ Button>
+                    <a> </ a>
+                    <Button class="buttonLessonFour" style={{width: 120, height: 70}}  variant="raised" onClick={ LessonFour } > Lesson 4 </ Button>
+                    <p> </ p>
+                    <Button class="buttonTest" style={{width: 100, height: 40}} variant="raised" onClick={ Test } > Test </ Button>
+                    <p> </ p>
 
-                      <p> </ p>
-                      <Button class="buttonLessonOne" style={{width: 120, height: 70}} variant="raised" onClick={ LessonOne } > Lesson 1 </ Button>
-                      <a> </ a>
-                      <Button class="buttonLessonTwo" style={{width: 120, height: 70}} variant="raised" onClick={ LessonTwo } > Lesson 2 </ Button> 
-                      <p> </ p>
-                      <Button class="buttonLessonThree" style={{width: 120, height: 70}} variant="raised" onClick={ LessonThree } > Lesson 3 </ Button>
-                      <a> </ a>
-                      <Button class="buttonLessonFour" style={{width: 120, height: 70}}  variant="raised" onClick={ LessonFour } > Lesson 4 </ Button>
-                      <p> </ p>
-                      <Button class="buttonTest" style={{width: 100, height: 40}} variant="raised" onClick={ Test } > Test </ Button>
-                      <p> </ p>
-
-
-                    <h4> In a hurry? Try quick search: </ h4>
-                      <form>
-                        <input
-                        placeholder="Search for..."
-                        ref={input => this.search = input}
-                        onChange={ this.handleInputChange } />
-                      <p> {this.state.query} </ p>
-                      </ form>
-                    </ body>
-                  </ div>
-
+                   <h4> In a hurry? Try quick search: </ h4>
+                    <form>
+                      <input
+                      placeholder="Search for..."
+                      ref={input => this.search = input}
+                      onChange={ this.handleInputChange } />
+                    <p> {this.state.query} </ p>
+                    </ form>
+                  </ body>
+                </ div>
                   <Button class="buttonNext" style={{width: 130, height: 40}} variant="raised" href="courses.asp"> Next Course </ Button>
-                  <div>
+                <div>
+                    <Button class="buttonHelp" style={{width: 130, height: 40}} variant="raised" href="help.html"> { help } </ Button>
                   <h5> { footerCurrent } </ h5>
-                <Button class="buttonHelp" style={{width: 130, height: 40}} variant="raised" href="help.html"> { help } </ Button>
                 </ div>
               </ div> 
             </ div>
 
-    );
+    ); // return
   }
 }
 
