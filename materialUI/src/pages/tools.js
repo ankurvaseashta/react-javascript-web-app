@@ -54,13 +54,13 @@ export function footer() {
   const note = formatName(user) + " last viewed this page at " + methods.localeTime() + " on " + methods.localetDate() +".";
   return note;
 }
-///TRY ME
+
 export function UserGreeting(props) {
-  return <h2> Welcome back! </h2>;
+  return <h3> Welcome back! </h3>;
 }
 
 export function GuestGreeting(props) {
-  return <h1>Please sign up.</h1>;
+  return <h3>Please sign up.</h3>;
 }
 
 export function Greeting(props) {

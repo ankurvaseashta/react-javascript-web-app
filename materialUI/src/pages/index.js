@@ -61,26 +61,7 @@ class LoginControl extends React.Component {
   handleLogoutClick() {
     this.setState({isLoggedIn: false});
   }
-
-  // render() {
-  //   const isLoggedIn = this.state.isLoggedIn;
-  //   let button;
-
-  //   if (isLoggedIn) {
-  //     button = <LogoutButton onClick={this.handleLogoutClick} />;
-  //   } else {
-  //     button = <LoginButton onClick={this.handleLoginClick} />
-  //   }
-
-  //   return (
-  //     <div>
-  //       <Greeting isLoggedIn={isLoggedIn} />
-  //       {button}
-  //     </div>
-  //   );
-  // }
 }
-
 
 class Index extends React.Component {
   state = {
@@ -109,11 +90,15 @@ class Index extends React.Component {
     
     const { classes } = this.props;
     const { open } = this.state;
-    const isLoggedIn = this.state;
+    const isLoggedIn = this.state.isLoggedIn || true;
   
     return (    
             <div>
-             <a> {user.firstName} is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. </ a>
+
+            <button className="indent" onClick={this.handleLoginClick}> Login </ button>
+
+            <a className="deepIndent"> {user.firstName} is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. </ a>
+            <Greeting isLoggedIn={isLoggedIn} />
               <div className={ classes.root }>
                 <Dialog open={ open } onClose={ this.handleClose }>
                   <DialogTitle> Web Application Development </ DialogTitle>  
@@ -144,8 +129,6 @@ class Index extends React.Component {
                   <body>
                   <Typography variant="display1" gutterBottom> <a> {user.level} React JavaScript App </ a> </ Typography>
                   <Typography variant="subheading" gutterBottom> Implementing Material UI Design components by Google in { new Date().getFullYear() } </ Typography>
-
-                    <Greeting isLoggedIn={isLoggedIn}/>
 
                     <Button class="buttonIntro" style={{width: 140, height: 40}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
                     <p> </ p>
