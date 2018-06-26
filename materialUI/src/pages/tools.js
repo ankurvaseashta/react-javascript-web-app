@@ -60,7 +60,7 @@ export function UserGreeting(props) {
 }
 
 export function GuestGreeting(props) {
-  return <h3>Please sign up.</h3>;
+  return <h3>Please sign in.</h3>;
 }
 
 export function Greeting(props) {

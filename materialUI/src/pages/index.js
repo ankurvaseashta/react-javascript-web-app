@@ -23,11 +23,9 @@ import { LessonOne }  from '../pages/lessonone';
 import { LessonTwo }  from '../pages/lessontwo';
 import { LessonThree }  from '../pages/lessonthree';
 import { LessonFour }  from '../pages/lessonfour';
-
-
+import { Greeting }  from '../pages/tools';
 import { LogoutButton }  from '../pages/tools';
 import { LoginButton }  from '../pages/tools';
-import { Greeting }  from '../pages/tools';
 
 /*
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
@@ -90,12 +88,19 @@ class Index extends React.Component {
     
     const { classes } = this.props;
     const { open } = this.state;
-    const isLoggedIn = this.state.isLoggedIn || true;
+    const isLoggedIn = this.state.isLoggedIn;
+    let button;
   
+    if (isLoggedIn) {
+      button = <LogoutButton onClick={this.handleLogoutClick} />;
+    } else {
+      button = <LoginButton onClick={this.handleLoginClick} />
+    }
+
     return (    
             <div>
 
-            <button className="indent" onClick={this.handleLoginClick}> Login </ button>
+            <Button class="buttonLogin" style={{width: 100, height: 40}} variant="raised" > Log in </ Button>
 
             <a className="deepIndent"> {user.firstName} is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. </ a>
             <Greeting isLoggedIn={isLoggedIn} />

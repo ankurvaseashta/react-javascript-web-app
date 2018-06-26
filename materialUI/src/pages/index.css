@@ -60,6 +60,23 @@ h5 {
     margin-bottom: 5px;
 }
 
+.buttonLogin{
+    background-color: #d7dae0;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 6px;
+    margin-left: 8px;
+    margin-right: 0px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 .buttonIntro{
     background-color: white;
     border: 2px solid #7518af;
@@ -79,7 +96,7 @@ h5 {
 
 .buttonHelp{
     background-color: #d7dae0;
-    border: 2px solid #7518af;
+    border: 2px solid black;
     color: black;
     text-align: center;
     text-decoration: none;
@@ -87,7 +104,7 @@ h5 {
     font-size: 14px;
     font-family: "Comic Sans MS", cursive, sans-serif;
     padding: 6px;
-    margin-left: 700px;
+    margin-left: 750px;
     margin-right: 0px;
     margin-top: 50px;
     margin-bottom: 0px;
