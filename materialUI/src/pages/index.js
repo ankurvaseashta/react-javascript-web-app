@@ -44,7 +44,7 @@ const styles = theme => ({
     backgroundSize: 'cover,'  },
 });
 
-class LoginControl extends React.Component {
+/*class LoginControl extends React.Component {
   constructor(props) {
     super(props);
     this.handleLoginClick = this.handleLoginClick.bind(this);
@@ -52,16 +52,28 @@ class LoginControl extends React.Component {
     this.state = {isLoggedIn: false};
   }
 
-  handleLoginClick() {
-    this.setState({isLoggedIn: true});
-  }
+handleLoginClick = () => {
+     this.setState({
+      isLoggedIn: true,
+    });
+  };
 
-  handleLogoutClick() {
-    this.setState({isLoggedIn: false});
-  }
-}
+handleLogoutClick = () => {
+         this.setState({
+      isLoggedIn: false,
+    });
+  };
+}*/
 
 class Index extends React.Component {
+  
+constructor(props) {
+    super(props);
+    this.handleLoginClick = this.handleLoginClick.bind(this);
+    this.handleLogoutClick = this.handleLogoutClick.bind(this);
+    this.state = {isLoggedIn: false};
+  }
+
   state = {
     open: false,
   };
@@ -75,6 +87,18 @@ class Index extends React.Component {
   handleClick = () => {
     this.setState({
       open: true,
+    });
+  };
+
+  handleLoginClick = () => {
+    this.setState({
+      isLoggedIn: true,
+    });
+  };
+
+    handleLogoutClick = () => {
+    this.setState({
+      isLoggedIn: false,
     });
   };
 
@@ -92,9 +116,9 @@ class Index extends React.Component {
     let button;
   
     if (!isLoggedIn) {
-      button = <LogoutButton onClick={this.handleLogoutClick} />;
+      button = <LogoutButton onClick={this.handleLoginClick} />;
     } else {
-      button = <LoginButton onClick={this.handleLoginClick} />
+      button = <LoginButton onClick={this.handleLogoutClick} />
     }
 
     return (    
