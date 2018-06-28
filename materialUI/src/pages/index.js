@@ -123,7 +123,7 @@ constructor(props) {
 
     return (    
             <div>
-            <a className="deepIndent"> {user.firstName} is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. {button} </ a>
+            <a className="deepIndent"> You are <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. {button} </ a>
             <Greeting isLoggedIn={isLoggedIn} /> 
               <div className={ classes.root }>
                 <Dialog open={ open } onClose={ this.handleClose }>

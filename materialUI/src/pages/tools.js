@@ -73,7 +73,7 @@ export function Greeting(props) {
 
 export function LoginButton(props) {
   return (
-    <button onClick={props.onClick}> Logout </button>
+    <button className="indent" onClick={props.onClick}> Logout </button>
   );
 }
 
