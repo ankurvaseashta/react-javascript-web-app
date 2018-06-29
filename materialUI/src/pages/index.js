@@ -95,7 +95,7 @@ constructor(props) {
     let button;
   
     if (!isLoggedIn) {
-      button = <LogoutButton onClick={this.handleLoginClick} />;
+      button = <LogoutButton buttonLogin onClick={this.handleLoginClick} />;
     } else {
       button = <LoginButton onClick={this.handleLogoutClick} />
     }

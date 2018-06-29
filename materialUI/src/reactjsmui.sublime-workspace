@@ -103,7 +103,7 @@
 			"file": "pages/index.js",
 			"settings":
 			{
-				"buffer_size": 6689,
+				"buffer_size": 6685,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -121,7 +121,7 @@
 			"file": "pages/tools.js",
 			"settings":
 			{
-				"buffer_size": 1723,
+				"buffer_size": 1742,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -268,7 +268,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -320,15 +320,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6689,
+						"buffer_size": 6685,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4441,
-								4441
+								5732,
+								5732
 							]
 						],
 						"settings":
@@ -338,7 +338,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1132.0,
+						"translation.y": 4.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -368,10 +368,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 308.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -380,15 +380,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1723,
+						"buffer_size": 1742,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1674,
-								1674
+								1565,
+								1565
 							]
 						],
 						"settings":
@@ -398,10 +398,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 201.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
