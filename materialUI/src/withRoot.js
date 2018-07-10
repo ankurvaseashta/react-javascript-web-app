@@ -1,6 +1,7 @@
 import React from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
+import blue from '@material-ui/core/colors/blue';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 /*
@@ -21,6 +22,12 @@ const theme = createMuiTheme({
       main: '#3f50b5',
       dark: '#002884',
       contrastText: '#fff',
+    },
+     default: {
+      light: blue[600],
+      main: blue[600],
+      dark: blue[600],
+      contrastText: blue[600],
     }
   },
   focus: {
