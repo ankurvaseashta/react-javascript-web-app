@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
 import { help }  from '../pages/help';
+// eslint-disable-next-line
 import { start, hello, user, topics, methods, footer, currentTime, Greeting }  from '../pages/tools';
 import { Test }  from '../pages/test';
 import { LessonOne }  from '../pages/lessonone';
@@ -84,14 +85,14 @@ constructor(props) {
     let button;
   
     if (!isLoggedIn) {
-      button = <p> <Button  variant="raised" color="primary" onClick={this.handleLoginClick}>Login</ Button> </ p>;
+      button = <p> <Button size="small" variant="raised" color="primary" onClick={this.handleLoginClick}>Login</ Button> </ p>;
     } else {
-      button = <p> <Button  variant="raised" color="secondary" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
+      button = <p> <Button size="small" variant="raised" color="secondary" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
     }
 
     return (    
             <div>
-            <p className="indent"> {button}  <a className="deepIndent"> You are <b>{isLoggedIn ? 'currently' : 'not'} logged in. <Greeting isLoggedIn={isLoggedIn} /> </ b> </ a> </ p>
+            <p className="indent"> {button}  <a className="deepIndent"> You are <b>{isLoggedIn ? 'currently' : 'not'} </ b>  logged in. <Greeting isLoggedIn={isLoggedIn} /> </ a> </ p>
               <div className={ classes.root }>
                 <Dialog open={ open } onClose={ this.handleClose }>
                   <DialogTitle> Web Application Development </ DialogTitle>  
@@ -122,17 +123,17 @@ constructor(props) {
                   <Typography variant="display1" gutterBottom> <a> {user.level} React JavaScript App </ a> </ Typography>
                   <Typography variant="subheading" gutterBottom> Implementing Material UI Design components by Google in { new Date().getFullYear() } </ Typography>
 
-                    <Button class="buttonIntro" style={{width: 140, height: 40}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
+                    <Button color="secondary" size="medium" style={{width: 140, height: 40}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
                     <p> </ p>
-                    <Button class="buttonLessonOne" style={{width: 120, height: 70}} variant="raised" onClick={ LessonOne } > Lesson 1 </ Button>
+                    <Button color="primary" size="large" style={{width: 120, height: 70}} variant="raised" onClick={ LessonOne } > Lesson 1 </ Button>
                     <a> </ a>
-                    <Button class="buttonLessonTwo" style={{width: 120, height: 70}} variant="raised" onClick={ LessonTwo } > Lesson 2 </ Button> 
+                    <Button color="primary" size="large" style={{width: 120, height: 70}} variant="raised" onClick={ LessonTwo } > Lesson 2 </ Button> 
                     <p> </ p>
-                    <Button class="buttonLessonThree" style={{width: 120, height: 70}} variant="raised" onClick={ LessonThree } > Lesson 3 </ Button>
+                    <Button color="primary" size="large" style={{width: 120, height: 70}} variant="raised" onClick={ LessonThree } > Lesson 3 </ Button>
                     <a> </ a>
-                    <Button class="buttonLessonFour" style={{width: 120, height: 70}}  variant="raised" onClick={ LessonFour } > Lesson 4 </ Button>
+                    <Button color="primary" size="large" style={{width: 120, height: 70}}  variant="raised" onClick={ LessonFour } > Lesson 4 </ Button>
                     <p> </ p>
-                    <Button class="buttonTest" style={{width: 100, height: 40}} variant="raised" onClick={ Test } > Test </ Button>
+                    <Button color="secondary" size="medium" style={{width: 100, height: 40}} variant="raised" onClick={ Test } > Test </ Button>
                     <p> </ p>
 
                    <h4> In a hurry? Try quick search: </ h4>
