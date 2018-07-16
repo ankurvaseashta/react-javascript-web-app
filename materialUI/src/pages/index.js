@@ -10,20 +10,12 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
 import { help }  from '../pages/help';
-import { hello }  from '../pages/tools';
-import { user }  from '../pages/tools';
-import { topics }  from '../pages/tools';
-import { methods }  from '../pages/tools';
-import { footer }  from '../pages/tools';
-import { currentTime }  from '../pages/tools';
+import { start, hello, user, topics, methods, footer, currentTime, Greeting }  from '../pages/tools';
 import { Test }  from '../pages/test';
- // eslint-disable-next-line
-import { start }  from '../pages/tools';
 import { LessonOne }  from '../pages/lessonone';
 import { LessonTwo }  from '../pages/lessontwo';
 import { LessonThree }  from '../pages/lessonthree';
 import { LessonFour }  from '../pages/lessonfour';
-import { Greeting }  from '../pages/tools';
 
 /*
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
@@ -92,9 +84,9 @@ constructor(props) {
     let button;
   
     if (!isLoggedIn) {
-      button = <p> <Button  variant="raised" color="secondary" onClick={this.handleLoginClick}>Login</ Button> </ p>;
+      button = <p> <Button  variant="raised" color="primary" onClick={this.handleLoginClick}>Login</ Button> </ p>;
     } else {
-      button = <p> <Button  variant="raised" color="primary" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
+      button = <p> <Button  variant="raised" color="secondary" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
     }
 
     return (    

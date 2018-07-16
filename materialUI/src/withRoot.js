@@ -1,9 +1,9 @@
 import React from 'react';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import purple from '@material-ui/core/colors/purple';
-import blue from '@material-ui/core/colors/blue';
-import red from '@material-ui/core/colors/red';
+import { MuiThemeProvider, createMuiTheme, } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import purple from '@material-ui/core/colors/purple';
+import red from '@material-ui/core/colors/red';
+
 
 /*
 Comments: Beginner's React JavaScript App: Implementing Google's Material UI Design in 2018
@@ -23,11 +23,10 @@ const theme = createMuiTheme({
       main: purple[700],
       dark: purple[900],
     },
-     default: {
-      light: blue[600],
-      main: blue[500],
-      dark: blue[700],
-      contrastText: blue[600],
+     error: {
+      light: red[300],
+      main: red[500],
+      dark: red[700],
     }
   },
   focus: {
