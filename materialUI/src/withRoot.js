@@ -19,10 +19,9 @@ const theme = createMuiTheme({
       dark: purple[700],
     },
     secondary: {
-      light: '#757ce8',
-      main: '#3f50b5',
-      dark: '#002884',
-      contrastText: '#fff',
+      light: purple[800],
+      main: purple[700],
+      dark: purple[900],
     },
      default: {
       light: blue[600],

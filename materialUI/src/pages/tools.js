@@ -56,11 +56,11 @@ export function footer() {
 }
 
 export function UserGreeting(props) {
-  return <h3> Welcome back! </h3>;
+  return <a> Welcome back! </a>;
 }
 
 export function GuestGreeting(props) {
-  return <h3>Please log in.</h3>;
+  return <a>Please log in.</a>;
 }
 
 export function Greeting(props) {

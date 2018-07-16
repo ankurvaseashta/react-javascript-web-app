@@ -92,24 +92,21 @@ constructor(props) {
     let button;
   
     if (!isLoggedIn) {
-      button = <p> <Button  variant="raised" color="default" onClick={this.handleLoginClick}>Login</ Button> </ p>;
+      button = <p> <Button  variant="raised" color="secondary" onClick={this.handleLoginClick}>Login</ Button> </ p>;
     } else {
-      button = <p> <Button  variant="raised" color="default" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
+      button = <p> <Button  variant="raised" color="primary" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
     }
 
     return (    
             <div>
-            <p className="indent"> {button} </ p>
-            <a className="deepIndent"> You are <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. </ a>
-            <Greeting isLoggedIn={isLoggedIn} /> 
+            <p className="indent"> {button}  <a className="deepIndent"> You are <b>{isLoggedIn ? 'currently' : 'not'} logged in. <Greeting isLoggedIn={isLoggedIn} /> </ b> </ a> </ p>
               <div className={ classes.root }>
                 <Dialog open={ open } onClose={ this.handleClose }>
                   <DialogTitle> Web Application Development </ DialogTitle>  
                   <DialogContent> 
                   <DialogContentText>
                   <p> 
-                    {helloUser} {theTime} and you're off to a good start! In this course, you'll learn how to build web applications using React JavaScript and Google's Material UI Design. 
-                    Here we'll cover the folowing basic concepts.
+                    {helloUser} {theTime} and you're off to a good start! In this course, you'll learn how to build web applications using React JavaScript and Google's Material UI Design. Here we'll cover the folowing basic concepts.
                   </ p> 
                     </ DialogContentText>
                       <div>
