@@ -71,14 +71,14 @@ export function Greeting(props) {
     return <GuestGreeting />;
 }
 
-export function LoginButton(props) {
+export function clickButton(props) {
   return (
-    <button className="indent" onClick={props.onClick}> Logout </button>
+    <button className="indent" onClick={props.onClick}> Clicked </button>
   );
 }
 
-export function LogoutButton(props) {
+export function unclickButton(props) {
   return (
-    <button className="indent" onClick={props.onClick}> Login </button>
+    <button className="indent" onClick={props.onClick}> Unclicked </button>
   );
 }

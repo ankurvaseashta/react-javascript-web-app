@@ -24,8 +24,6 @@ import { LessonTwo }  from '../pages/lessontwo';
 import { LessonThree }  from '../pages/lessonthree';
 import { LessonFour }  from '../pages/lessonfour';
 import { Greeting }  from '../pages/tools';
-import { LogoutButton }  from '../pages/tools';
-import { LoginButton }  from '../pages/tools';
 
 /*
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
@@ -88,21 +86,21 @@ constructor(props) {
  }
 
   render() {
-    
     const { classes } = this.props;
     const { open } = this.state;
     const isLoggedIn = this.state.isLoggedIn;
     let button;
   
     if (!isLoggedIn) {
-      button = <LogoutButton buttonLogin onClick={this.handleLoginClick} />;
+      button = <p> <Button  variant="raised" color="default" onClick={this.handleLoginClick}>Login</ Button> </ p>;
     } else {
-      button = <LoginButton onClick={this.handleLogoutClick} />
+      button = <p> <Button  variant="raised" color="default" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
     }
 
     return (    
             <div>
-            <a className="deepIndent"> You are <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. {button} </ a>
+            <p className="indent"> {button} </ p>
+            <a className="deepIndent"> You are <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in. </ a>
             <Greeting isLoggedIn={isLoggedIn} /> 
               <div className={ classes.root }>
                 <Dialog open={ open } onClose={ this.handleClose }>

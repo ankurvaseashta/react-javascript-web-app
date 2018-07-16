@@ -2,6 +2,7 @@ import React from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
 import blue from '@material-ui/core/colors/blue';
+import red from '@material-ui/core/colors/red';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
 /*
@@ -25,8 +26,8 @@ const theme = createMuiTheme({
     },
      default: {
       light: blue[600],
-      main: blue[600],
-      dark: blue[600],
+      main: blue[500],
+      dark: blue[700],
       contrastText: blue[600],
     }
   },
@@ -38,7 +39,7 @@ const theme = createMuiTheme({
   input: {
       inkbar: {
         '&:after': {
-          backgroundColor: 'red'
+          backgroundColor: red[600]
         }
       }
     },
