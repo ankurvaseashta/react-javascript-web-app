@@ -85,9 +85,9 @@ constructor(props) {
     let button;
   
     if (!isLoggedIn) {
-      button = <p> <Button size="small" variant="raised" color="primary" onClick={this.handleLoginClick}>Login</ Button> </ p>;
+      button = <p> <Button size="small" variant="raised" color="secondary" onClick={this.handleLoginClick}>Login</ Button> </ p>;
     } else {
-      button = <p> <Button size="small" variant="raised" color="secondary" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
+      button = <p> <Button size="small" variant="raised" color="primary" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
     }
 
     return (    
