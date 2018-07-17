@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"cur",
+				"currentTime"
+			],
+			[
+				"get",
+				"getContrastText"
+			],
+			[
 				"Login",
 				"LoginButton"
 			],
@@ -103,7 +111,7 @@
 			"file": "pages/index.js",
 			"settings":
 			{
-				"buffer_size": 6685,
+				"buffer_size": 6506,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -112,7 +120,7 @@
 			"file": "pages/index.css",
 			"settings":
 			{
-				"buffer_size": 4616,
+				"buffer_size": 1543,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -121,7 +129,7 @@
 			"file": "pages/tools.js",
 			"settings":
 			{
-				"buffer_size": 1742,
+				"buffer_size": 1744,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -130,7 +138,8 @@
 			"file": "/JavaScript/launch/react-javascript-web-app/materialUI/public/index.html",
 			"settings":
 			{
-				"buffer_size": 532,
+				"buffer_size": 527,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -138,7 +147,7 @@
 			"file": "withRoot.js",
 			"settings":
 			{
-				"buffer_size": 1506,
+				"buffer_size": 1444,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -211,13 +220,11 @@
 			}
 		},
 		{
-			"contents": "\"//*[@class='eee-dashboard-card__footer']/span/div[@class='eds-action-menu']/button[@class='eds-button eds-button--primary']/svg[@data-icon='ellipsis-v']\");\n",
 			"file": "/Users/avaseashta/Downloads/NOTES",
-			"file_size": 353,
-			"file_write_time": 131740825290000000,
 			"settings":
 			{
-				"buffer_size": 157,
+				"buffer_size": 120,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -279,7 +286,7 @@
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -293,6 +300,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"UserGreeting",
+			"please",
 			"user",
 			"getElementById",
 			"stem",
@@ -322,7 +331,7 @@
 	"groups":
 	[
 		{
-			"selected": 13,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -331,15 +340,135 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6685,
+						"buffer_size": 6506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1980,
-								1980
+								4446,
+								4446
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1.0,
+						"translation.y": 1364.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pages/index.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1543,
+								1543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 586.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pages/tools.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1317,
+								1317
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 179.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/JavaScript/launch/react-javascript-web-app/materialUI/public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 527,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								508,
+								508
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "withRoot.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								709,
+								709
 							]
 						],
 						"settings":
@@ -353,126 +482,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "pages/index.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4616,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								258,
-								258
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1066.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "pages/tools.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1742,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1565,
-								1565
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 201.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/JavaScript/launch/react-javascript-web-app/materialUI/public/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 532,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "withRoot.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1506,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1020,
-								1020
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -501,7 +510,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -531,7 +540,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -561,7 +570,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -617,7 +626,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
@@ -701,7 +710,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -710,15 +719,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 157,
+						"buffer_size": 120,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								120,
+								6
 							]
 						],
 						"settings":
@@ -729,7 +738,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
