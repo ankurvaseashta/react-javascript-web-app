@@ -146,9 +146,9 @@ constructor(props) {
                     </ form>
                   </ body>
                 </ div>
-                  <Button class="buttonNext" style={{width: 130, height: 40}} variant="raised" href="courses.asp"> Next Course </ Button>
+                  <Button color="default" size="medium" style={{width: 130, height: 40, margin: 20}} variant="raised" href="courses.asp"> Next Course </ Button>
                 <div>
-                    <Button class="buttonHelp" style={{width: 130, height: 40}} variant="raised" href="help.html"> { help } </ Button>
+                    <Button color="default" size="medium" style={{width: 130, height: 40, margin: '10px -700px 15px 20px', padding: 2}} variant="raised" href="help.html"> { help } </ Button>
                   <h5> { footerCurrent } </ h5>
                 </ div>
               </ div> 

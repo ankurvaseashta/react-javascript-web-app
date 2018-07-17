@@ -59,37 +59,3 @@ h5 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
-.buttonHelp{
-    background-color: #d7dae0;
-    border: 2px solid black;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    padding: 6px;
-    margin-left: 750px;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.buttonNext {
-    background-color: #d7dae0;
-    border: 2px solid #7518af;
-    color: #7518af;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    padding: 6px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
