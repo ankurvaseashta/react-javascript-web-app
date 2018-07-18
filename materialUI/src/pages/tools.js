@@ -30,7 +30,7 @@ export function start(){
 export const user = {  
   firstName: 'Buddy',
   lastName: 'Vaseashta',
-  level: 'Level Two'
+  level: 'React 101'
 };
 
 export const topics = {  
