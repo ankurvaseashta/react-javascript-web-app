@@ -20,9 +20,9 @@ const theme = createMuiTheme({
       dark: purple[700],
     },
     secondary: {
-      light: blue[600],
-      main: blue[500],
-      dark: blue[700],
+      light: blue[500],
+      main: blue[700],
+      dark: blue[900],
     },
      default: {
       light: red[300],

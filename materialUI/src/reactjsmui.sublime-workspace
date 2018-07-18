@@ -111,7 +111,7 @@
 			"file": "pages/index.js",
 			"settings":
 			{
-				"buffer_size": 6506,
+				"buffer_size": 6679,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -120,7 +120,7 @@
 			"file": "pages/index.css",
 			"settings":
 			{
-				"buffer_size": 1543,
+				"buffer_size": 670,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -129,7 +129,7 @@
 			"file": "pages/tools.js",
 			"settings":
 			{
-				"buffer_size": 1744,
+				"buffer_size": 1774,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -147,7 +147,7 @@
 			"file": "withRoot.js",
 			"settings":
 			{
-				"buffer_size": 1444,
+				"buffer_size": 1446,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -220,10 +220,13 @@
 			}
 		},
 		{
+			"contents": "\n\n\n\nh4. Acceptance Criteria has been met for this development task UIS-2141 (?)\n# Investigate why Iconography is pulling down so many packages (/) _(I assume this has been done.)_\n# Remove unnecessary dependencies e.g. MUI \n** (/) {code}\nUSD1703230:prisma-design-system root# npm install @eui/ds-icons\nnpm WARN react-tap-event-plugin@3.0.3 requires a peer of react@^16.0.0-0 < 16.4.0 but none is installed. You must install peer dependencies yourself.\nnpm WARN react-tap-event-plugin@3.0.3 requires a peer of react-dom@^16.0.0-0 < 16.4.0 but none is installed. You must install peer dependencies yourself.\n\n+ @eui/ds-icons@0.2.0\nadded 9 packages and updated 71 packages in 19.81s\nUSD1703230:prisma-design-system root# \n{code}\n# Validate icons still work as expected when downloaded\n** see attached: *1* !pic1.png|thumbnail,border=1! *2* !pic2.png|thumbnail,border=1!\n# Validate if package install is smaller + faster `npm install @eui/ds-icons@0.2.1-SNAPSHOT.20180717.180624Z`\n** https://git.ellucian.com/projects/EUI/repos/ds-icons/browse\n** https://jenkins.devops.ellucian.com/jenkins/job/Ethos%20UI/job/ds-icon/job/develop/19/changes#detail0\n** (/) {code}\nUSD1703230:prisma-design-system root# npm install @eui/ds-icons@0.2.1-SNAPSHOT.20180717.180624Z\nnpm WARN react-tap-event-plugin@3.0.3 requires a peer of react@^16.0.0-0 < 16.4.0 but none is installed. You must install peer dependencies yourself.\nnpm WARN react-tap-event-plugin@3.0.3 requires a peer of react-dom@^16.0.0-0 < 16.4.0 but none is installed. You must install peer dependencies yourself.\n\n+ @eui/ds-icons@0.2.1-SNAPSHOT.20180717.180624Z\nremoved 117 packages and updated 1 package in 10.639s\nUSD1703230:prisma-design-system root# \n{code}\n\nh4. SUTs\n*URL*: http://localhost:3000/\n*Browsers*: -Firefox, Chrome, Safari-\n*About*: v0.0.9-SNAPSHOT\n\nh4. Test Case Documentation\n- Not sure if any is needed here. (*y)\n\n",
 			"file": "/Users/avaseashta/Downloads/NOTES",
+			"file_size": 120,
+			"file_write_time": 131762345720000000,
 			"settings":
 			{
-				"buffer_size": 120,
+				"buffer_size": 1880,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -286,7 +289,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -340,15 +343,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6506,
+						"buffer_size": 6679,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4446,
-								4446
+								1362,
+								1362
 							]
 						],
 						"settings":
@@ -357,8 +360,8 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 1.0,
-						"translation.y": 1364.0,
+						"translation.x": 0.0,
+						"translation.y": 200.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -370,15 +373,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1543,
+						"buffer_size": 670,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1543,
-								1543
+								670,
+								670
 							]
 						],
 						"settings":
@@ -388,10 +391,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 586.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -400,15 +403,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1744,
+						"buffer_size": 1774,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1317,
-								1317
+								443,
+								443
 							]
 						],
 						"settings":
@@ -418,10 +421,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 179.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -460,7 +463,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1444,
+						"buffer_size": 1446,
 						"regions":
 						{
 						},
@@ -510,7 +513,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -570,7 +573,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -598,7 +601,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -710,7 +713,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -719,15 +722,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 120,
+						"buffer_size": 1880,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								6
+								1880,
+								1880
 							]
 						],
 						"settings":
@@ -738,7 +741,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]

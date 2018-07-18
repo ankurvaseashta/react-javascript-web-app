@@ -6,6 +6,23 @@ import './index.css';
 Comments: Level {} React JavaScript App: Implementing Google's Material UI Design in 2018
 */
 
+/* Functional Component */
+export function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+    return <GuestGreeting />;
+}
+
+export function UserGreeting(props) {
+  return <a> Welcome back! </a>;
+}
+
+export function GuestGreeting(props) {
+  return <a> Please log in. </a>;
+}
+
 export function start(){
      return alert("Are you ready to start?")     
 }
@@ -55,21 +72,6 @@ export function footer() {
   return note;
 }
 
-export function UserGreeting(props) {
-  return <a> Welcome back! </a>;
-}
-
-export function GuestGreeting(props) {
-  return <a>Please log in.</a>;
-}
-
-export function Greeting(props) {
-  const isLoggedIn = props.isLoggedIn;
-  if (isLoggedIn) {
-    return <UserGreeting />;
-  }
-    return <GuestGreeting />;
-}
 
 export function clickButton(props) {
   return (
