@@ -22,6 +22,8 @@ import { LessonFour }  from '../pages/lessonfour';
 Comments: A React JavaScript App: Implementing Google's Material UI Design components in 2018
 */
 
+
+console.log("Hello! Ready to try out this great new app?");
 //start();
 
 let helloUser = hello();
@@ -86,23 +88,23 @@ class Index extends React.Component {
       let button;
     
       if (!isLoggedIn) {
-        button = <p> <Button size="small" variant="raised" color="secondary" onClick={this.handleLoginClick}>Login</ Button> </ p>;
+        button = <a> <Button size="small" variant="raised" color="secondary" onClick={this.handleLoginClick}>Login</ Button> </ a>;
       } else {
-        button = <p> <Button size="small" variant="raised" color="primary" onClick={this.handleLogoutClick}>Logout</ Button> </ p>;
+        button = <a> <Button size="small" variant="raised" color="primary" onClick={this.handleLogoutClick}>Logout</ Button> </ a>;
       }
 
-      return (    
+      return (
               <div>
               <p className="indent"> {button}  <a className="deepIndent"> You are <b>{isLoggedIn ? 'currently' : 'not'} </ b>  logged in. <Greeting isLoggedIn={isLoggedIn} /> </ a> </ p>
                 <div className={ classes.root }>
                   <Dialog open={ open } onClose={ this.handleClose }>
-                    <DialogTitle> Web Application Development </ DialogTitle>  
+                    <DialogTitle> Web Application Development </ DialogTitle>
                     <DialogContent> 
                     <DialogContentText>
                     <p> 
                       {helloUser} {theTime} and you're off to a good start! In this course, you'll learn how to build web applications using React JavaScript and Google's Material UI Design. Here we'll cover the folowing basic concepts.
                     </ p> 
-                      </ DialogContentText>
+                      </ DialogContentText> 
                         <div>
                         <a className="indent"> <b> List of topics: </ b> </ a>
                           <ul className="deepIndent"> 
@@ -118,12 +120,10 @@ class Index extends React.Component {
                       <Button color="primary" onClick={this.handleClose}> OK </ Button>
                     </ DialogActions>
                   </ Dialog>
-
                   <div>
                     <body>
-                    <Typography variant="display2" gutterBottom> <a> {user.level} React JavaScript App </ a> </ Typography>
+                    <Typography variant="display2" gutterBottom> <a> {user.level} React JavaScript App </ a> </ Typography> 
                     <Typography variant="subheading" gutterBottom> Implementing Material UI Design components by Google in { new Date().getFullYear() } </ Typography>
-
                       <Button color="secondary" size="medium" style={{width: 140, height: 40, margin: 20}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
                       <p> </ p>
                       <Button color="primary" size="large" style={{width: 120, height: 70, margin: 20}} variant="raised" onClick={ LessonOne } > Lesson 1 </ Button>
@@ -136,7 +136,6 @@ class Index extends React.Component {
                       <p> </ p>
                       <Button color="secondary" size="medium" style={{width: 100, height: 40, margin: 20}} variant="raised" onClick={ Test } > Test </ Button>
                       <p> </ p>
-
                      <h4> In a hurry? Try quick search: </ h4>
                       <form>
                         <input
@@ -153,15 +152,14 @@ class Index extends React.Component {
                   <div>
                     <body>
                       <Typography variant="display" gutterBottom> <a> { footerCurrent } </ a> </ Typography>
-                      <Button color="secondary" size="medium" style={{width: 140, height: 40, margin: 20}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
                     </ body>
                       <Button color="default" size="medium" style={{width: 130, height: 40, margin: '10px -700px 15px 20px', padding: 2}} variant="raised" href="help.html"> { help } </ Button>
                   </ div>
                 </ div> 
               </ div>
-      ); // return
-    }
-}
+      ); //
+  } /* render */ 
+} /* class */ 
 
 Index.propTypes = {
   classes: PropTypes.object.isRequired,
