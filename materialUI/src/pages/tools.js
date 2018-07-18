@@ -24,7 +24,7 @@ export function GuestGreeting(props) {
 }
 
 export function start(){
-     return alert("Are you ready to start?")     
+     return alert("Are you ready to start?");     
 }
 
 export const user = {  
