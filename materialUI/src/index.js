@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Index from './pages/index';
 import Help from './pages/help';
-import HelloMessage from './pages/index';
 
 
 if( true ){
