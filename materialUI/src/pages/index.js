@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
 import { BrowserRouter as Router, NavLink as Link } from "react-router-dom";
+// eslint-disable-next-line
 import { render } from 'react-dom';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
@@ -13,8 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import withRoot from '../withRoot';
 import { help }  from '../pages/help';
-// eslint-disable-next-line
-import { start, hello, user, topics, methods, footer, currentTime, Greeting }  from '../pages/tools';
+import { hello, user, topics, methods, footer, currentTime, Greeting }  from '../pages/tools';
 import { Test }  from '../pages/test';
 import { LessonOne }  from '../pages/lessonone';
 import { LessonTwo }  from '../pages/lessontwo';
