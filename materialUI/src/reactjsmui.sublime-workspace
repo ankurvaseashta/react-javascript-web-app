@@ -124,7 +124,7 @@
 			"file": "pages/index.js",
 			"settings":
 			{
-				"buffer_size": 7191,
+				"buffer_size": 7282,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -217,13 +217,13 @@
 			}
 		},
 		{
-			"contents": "\n/*........*/",
+			"contents": "\n\nh4. Acceptance Criteria has been met for this development task UIS-2095 (/)\n# Variation of Page Alerts component \n# Component name 'Alert - Page Level' \n** see attached: !pic0.png|thumbnail,border=1! *>>* !pic1.png|thumbnail,border=1! (/)\n# Try to reuse page level snackbar styling \n** see attached: !pic3.png|thumbnail,border=1! (/)\n# Match UX styling in Zeplin\n** see attached: *Success* !pic4.png|thumbnail,border=1! *Information* !pic5.png|thumbnail,border=1! *Warning* !pic6.png|thumbnail,border=1! *Error* !pic7.png|thumbnail,border=1! (/) \n# Must be responsive from XS - L view ports \n** xs, extra-small: 0px or larger (599px) \n** sm, small: 600px or larger (959px) \n** md, medium: 960px or larger (1279px) \n** lg, large: 1280px or larger (1919px) \n** Chrome see attached: \n*** *xs* !Chrome4.png|thumbnail,border=1! *&&* !Chrome4a.png|thumbnail,border=1! *&&* !Chrome4c.png|thumbnail,border=1! *&&* !Chrome4c.png|thumbnail,border=1! (/)\n*** *sm* !Chrome3.png|thumbnail,border=1! *>>* *md* !Chrome2.png|thumbnail,border=1! (/) *>>* *lg* !Chrome1.png|thumbnail,border=1! (/) *>>*  Firefox see attached: \n*** *xs* \n** !Firefox1.png|thumbnail,border=1! (/) *>>* *sm* !Firefox2.png|thumbnail,border=1! *>>* *md* !Firefox3.png|thumbnail,border=1! *>>* *lg* !Firefox4.png|thumbnail,border=1! (/)\n# Component name 'Alert - Inline Level'\n# Try to reuse page level snackbar styling \n** see attached: !component.png|thumbnail,border=1!\n# Alert must be configurable: \n** Dev can require an X which the user must explicitly close, with no timeout option \n** Dev can define a timeout period when the alert fads away \n# Match UX styling in Zeplin\n# Animation should come from top of card\n** see attached: *Success* !success.png|thumbnail,border=1! *Information* !information.png|thumbnail,border=1! *Warning* !warning.png|thumbnail,border=1! *Error* !error.png|thumbnail,border=1! (/) \n# Show examples and usage notes for Block Level Alerts - these may be on a card, overlay, etc... \n# Usage notes must indicate that for Error alerts those must be explicilty closed by the end user\n** see attached: !inlineUsage.png|thumbnail,border=1! (/)\n# Demonstrate design tokens has been consumed to style.\n** see attached: !tokens.png|thumbnail,border=1! (/)\n# Must be responsive from XS - L view ports \n** xs, extra-small: 0px or larger (599px) \n** sm, small: 600px or larger (959px) \n** md, medium: 960px or larger (1279px) \n** lg, large: 1280px or larger (1919px) \n** Chrome see attached: \n*** *xs* !chromeOne.png|thumbnail,border=1! *&&* !Chrome4a.png|thumbnail,border=1! *&&* !Chrome4c.png|thumbnail,border=1! *&&* !Chrome4c.png|thumbnail,border=1! (/)\n*** *sm* !chromeTwo.png|thumbnail,border=1! *>>* *md* !chromeThree.png|thumbnail,border=1! (/) *>>* *lg* !chromeFour.png|thumbnail,border=1! (/)\n** Firefox see attached: \n*** *xs* !FirefoxOne.png|thumbnail,border=1! *>>* *sm* !FirefoxTwo.png|thumbnail,border=1! (/) *>>* *md* !FirefoxThree.png|thumbnail,border=1! (/) *>>* *lg* !FirefoxFour.png|thumbnail,border=1! (/)\n** Safari see attached: *xs* !safariFour.png|thumbnail,border=1! *sm* !safariThree.png|thumbnail,border=1! *md* !safariTwo.png|thumbnail,border=1! *lg* !safariOne.png|thumbnail,border=1! (/)\n# Manual Testing (/)\n# Create Test Cases\n**  https://confluence.ellucian.com/display/PS/Test+Case+-+Alerts (/)\n\nh4. SUTs\n*URL*: http://localhost:3001/components/Alert\n*Browsers*: Firefox, Chrome, Safari\n*About*: v0.0.10-SNAPSHOT",
 			"file": "/Users/avaseashta/Downloads/NOTES",
-			"file_size": 2206,
-			"file_write_time": 131764104490000000,
+			"file_size": 1148,
+			"file_write_time": 131765708240000000,
 			"settings":
 			{
-				"buffer_size": 13,
+				"buffer_size": 3430,
 				"line_ending": "Unix"
 			}
 		}
@@ -335,7 +335,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 12,
 			"sheets":
 			[
 				{
@@ -364,7 +364,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -373,15 +373,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7191,
+						"buffer_size": 7282,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1061,
-								1061
+								80,
+								80
 							]
 						],
 						"settings":
@@ -391,10 +391,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -693,15 +693,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13,
+						"buffer_size": 3430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3,
-								3
+								2330,
+								2330
 							]
 						],
 						"settings":
@@ -712,7 +712,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

@@ -52,21 +52,21 @@ class Help extends React.Component {
     const { open } = this.state;
 
     return (
-     <div className={ classes.root }>
-       <Dialog open={ open } onClose={ this.handleClose }>
-        <DialogTitle> Help </ DialogTitle>  
-           <DialogContent> 
-             <DialogContentText>
-              <p> 
-              Text
-              </ p> 
-            </ DialogContentText>
-          </ DialogContent>
-          <DialogActions>
-              <Button color="primary" onClick={this.handleClose}> OK </ Button>
-          </ DialogActions>
-        </ Dialog>
-      </ div>
+       <div className={ classes.root }>
+         <Dialog open={ open } onClose={ this.handleClose }>
+          <DialogTitle> Help </ DialogTitle>  
+             <DialogContent> 
+               <DialogContentText>
+                <p> 
+                Text
+                </ p> 
+              </ DialogContentText>
+            </ DialogContent>
+            <DialogActions>
+                <Button color="primary" onClick={this.handleClose}> OK </ Button>
+            </ DialogActions>
+          </ Dialog>
+        </ div>
     );
   }
 }
