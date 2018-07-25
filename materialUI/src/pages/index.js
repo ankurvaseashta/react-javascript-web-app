@@ -16,7 +16,6 @@ import { help }  from '../pages/help';
 // eslint-disable-next-line
 import { start, hello, user, topics, methods, footer, currentTime, Greeting }  from '../pages/tools';
 import { Test }  from '../pages/test';
-import TestMe from '../pages/test';
 import { LessonOne }  from '../pages/lessonone';
 import { LessonTwo }  from '../pages/lessontwo';
 import { LessonThree }  from '../pages/lessonthree';
