@@ -98,6 +98,7 @@ class Index extends React.Component {
       }
 
       return (
+            <Router>
               <div>
               <p className="indent"> {button}  <a className="deepIndent"> You are <b>{isLoggedIn ? 'currently' : 'not'} </ b>  logged in. <Greeting isLoggedIn={isLoggedIn} /> </ a> </ p>
                 <div className={ classes.root }>
@@ -158,9 +159,20 @@ class Index extends React.Component {
                       <Typography variant="display" gutterBottom> <a> { footerCurrent } </ a> </ Typography>
                     </ body>
                       <Button color="default" size="medium" style={{width: 130, height: 40, margin: '10px -700px 15px 20px', padding: 2}} variant="raised" href="help.html"> { help } </ Button>
+                  
+                      <div>
+                        <h2>React Router Tutorial</h2>
+                          <h4> <Link to={'/'}>Route me to..</Link></ h4>
+
+                         <Switch>
+                            <Route exact path='/' component={ help } />
+                         </Switch>
+                      </div>
+                    
                   </ div>
                 </ div> 
               </ div>
+            </ Router>
       ); //
   } /* render */ 
 } /* class */ 
