@@ -37,7 +37,7 @@ let theTime = currentTime();
 const styles = theme => ({
   root: {
     textAlign: 'center',
-    paddingTop: theme.spacing.unit * 5,
+    paddingTop: theme.spacing.unit * 4,
     backgroundSize: 'cover,'  },
 });
 
@@ -45,14 +45,14 @@ const styles = theme => ({
 const view = state => (
   <div>
     <ul>
-      <li> <Link to="/">Home Page</Link> </li>
-      <li> <Link to="/about">About Page</Link> </li>
-    </ul>
+      <li> <Link to="/">Lesson 3</Link> </li>
+      <li> <Link to="/about">Lesson 4</Link> </li>
+    </ ul>
     <hr />
-    <Route path="/" render={Home} />
-    <Route path="/about" render={About} />
-  </div>
-)
+    <Route path="/lessonThree" render={ LessonThree } />
+    <Route path="/lessonFourt" render={ LessonFour } />
+  </ div>
+);
 */
 
 /* Class Component */
@@ -106,9 +106,9 @@ class Index extends React.Component {
       let button;
     
       if (!isLoggedIn) {
-        button = <a> <Button size="small" variant="raised" color="secondary" onClick={this.handleLoginClick}>Login</ Button> </ a>;
+        button = <a> <Button size="medium" variant="raised" color="secondary" onClick={this.handleLoginClick}>Login</ Button> </ a>;
       } else {
-        button = <a> <Button size="small" variant="raised" color="primary" onClick={this.handleLogoutClick}>Logout</ Button> </ a>;
+        button = <a> <Button size="medium" variant="raised" color="primary" onClick={this.handleLogoutClick}>Logout</ Button> </ a>;
       }
 
       return (
@@ -173,6 +173,23 @@ class Index extends React.Component {
                       <Typography variant="display" gutterBottom> <a> { footerCurrent } </ a> </ Typography>
                     </ body>
                       <Button color="default" size="medium" style={{width: 130, height: 40, margin: '10px -700px 15px 20px', padding: 2}} variant="raised" href="help.html"> { help } </ Button>
+
+                        <div>
+                          <ul>
+                            <li> <Link to="/lessonOne">Lesson 1</ Link> </ li>
+                            <li> <Link to="/lessonTwo">Lesson 2</ Link> </ li>
+                            <li> <Link to="/lessonThree">Lesson 3</ Link> </ li>
+                            <li> <Link to="/lessonFour">Lesson 4</ Link> </ li>
+                            <li> <Link to="/lessonFour">Test</ Link> </ li>
+                          </ ul>
+                          <hr />
+                          <Route path="/lessonOne" render={ LessonOne } />
+                          <Route path="/lessonTwo" render={ LessonTwo } />
+                          <Route path="/lessonThree" render={ LessonThree } />
+                          <Route path="/lessonFour" render={ LessonFour } />
+                          <Route path="/test" render={ Test } />
+                        </ div>
+
                   </ div>
                 </ div> 
               </ div>
