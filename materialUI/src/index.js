@@ -12,20 +12,12 @@ ReactDOM.render(
 	document.getElementById('#root'),
 	);
 
-} if ( false ) {
-
-ReactDOM.render(
-	<Help />, 
-	document.querySelector('#help'), 
-	document.getElementById('#help'), 
-	);
 
 } else {
 
 ReactDOM.render(
-	<Index />,
-	document.querySelector('#root'), 
-	document.getElementById('#root'),
+	<Help />, 
+	document.querySelector('#help'), 
+	document.getElementById('#help'),
 	);
-
 }

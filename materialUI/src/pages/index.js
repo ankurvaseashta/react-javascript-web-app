@@ -41,6 +41,20 @@ const styles = theme => ({
     backgroundSize: 'cover,'  },
 });
 
+/*
+const view = state => (
+  <div>
+    <ul>
+      <li> <Link to="/">Home Page</Link> </li>
+      <li> <Link to="/about">About Page</Link> </li>
+    </ul>
+    <hr />
+    <Route path="/" render={Home} />
+    <Route path="/about" render={About} />
+  </div>
+)
+*/
+
 /* Class Component */
 class Index extends React.Component {
   
@@ -159,16 +173,6 @@ class Index extends React.Component {
                       <Typography variant="display" gutterBottom> <a> { footerCurrent } </ a> </ Typography>
                     </ body>
                       <Button color="default" size="medium" style={{width: 130, height: 40, margin: '10px -700px 15px 20px', padding: 2}} variant="raised" href="help.html"> { help } </ Button>
-                  
-                      <div>
-                        <h2>React Router Tutorial</h2>
-                          <h4> <Link to={'/'}>Route me to..</Link></ h4>
-
-                         <Switch>
-                            <Route exact path='/' component={ help } />
-                         </Switch>
-                      </div>
-                    
                   </ div>
                 </ div> 
               </ div>

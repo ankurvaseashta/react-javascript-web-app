@@ -14,7 +14,7 @@ import { methods }  from '../pages/tools';
 Comments: Level {} React JavaScript App: Implementing Google's Material UI Design in 2018
 */
 
-export const help = "Need Help?";
+export var help = "Need Help?";
 
 const styles = theme => ({
   root: {
