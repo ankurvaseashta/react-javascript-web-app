@@ -142,7 +142,7 @@ class Index extends React.Component {
                   <div>
                     <body>
                     <Typography variant="display1" gutterBottom> <a> {user.level}: A JavaScript library for building user interfaces </ a> </ Typography> 
-                    <Typography variant="subheading" gutterBottom> Implementing Google's Material UI Design component libraries in { new Date().getFullYear() } </ Typography>
+                    <Typography variant="subheading" gutterBottom> Implementing Material UI Design component libraries by Google in { new Date().getFullYear() } </ Typography>
                       <Button color="secondary" size="medium" style={{width: 140, height: 40, margin: 20}} variant="raised" onClick={this.handleClick} > Introduction </ Button>
                       <p> </ p>
                       <Button color="primary" size="large" style={{width: 120, height: 70, margin: 20}} variant="raised" onClick={ LessonOne } > Lesson 1 </ Button>

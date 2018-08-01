@@ -11,13 +11,4 @@ ReactDOM.render(
 	document.querySelector('#root'), 
 	document.getElementById('#root'),
 	);
-
-
-} else {
-
-ReactDOM.render(
-	<Help />, 
-	document.querySelector('#help'), 
-	document.getElementById('#help'),
-	);
 }
