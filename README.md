@@ -1,8 +1,10 @@
 ## react-javascript-web-app
 
-### My first React JavaScript web application.
+### A React JavaScript web application.
 
-* This repository contains web app code.
+* This is a React JavaScript web application that implements Material UI Design component libraries by Google.
 
 #### About Me
-* https://www.vaseashta.com/
+* Name: Ankur Vaseashta
+* LinkedIn: https://www.linkedin.com/in/ankurvaseashta/
+* Blog: https://www.vaseashta.com/
