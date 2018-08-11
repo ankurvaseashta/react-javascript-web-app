@@ -37,7 +37,7 @@ export const topics = {
   lesson1: 'The let, const, & ES6 Arrow Functions!',
   lesson2: 'Classes',
   lesson3: 'Spread & Rest Operators',
-  lesson4: 'Reference vs Primitive Types and Arrays!',
+  lesson4: 'The let, const, ES6 Arrow Functions & Destructuring',
   test: 'Test Your Knowledge'
 };
 
