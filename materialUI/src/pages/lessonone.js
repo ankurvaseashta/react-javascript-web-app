@@ -43,7 +43,7 @@ const myObj = {
 }
 const {name1} = myObj;
 console.log(name1); // prints 'Max'
-console.log(myObj.age1); // prints undefined
+console.log(myObj.age1); // prints 28
 console.log(myObj); // prints {name: 'Max', age: 28}
 /*Destructuring is very useful when working with function arguments. Consider this example:*/
 
