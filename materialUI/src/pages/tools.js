@@ -34,10 +34,10 @@ export const user = {
 };
 
 export const topics = {  
-  lesson1: 'Elements',
-  lesson2: 'Components',
-  lesson3: 'Text Fields',
-  lesson4: 'Buttons',
+  lesson1: 'The let, const, & ES6 Arrow Functions!',
+  lesson2: 'Classes',
+  lesson3: 'Spread & Rest Operators',
+  lesson4: 'Reference vs Primitive Types and Arrays!',
   test: 'Test Your Knowledge'
 };
 
