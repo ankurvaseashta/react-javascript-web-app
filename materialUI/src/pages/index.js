@@ -16,10 +16,10 @@ import withRoot from '../withRoot';
 import { help }  from '../pages/help';
 import { hello, user, topics, methods, footer, currentTime, Greeting }  from '../pages/tools';
 import { Test }  from '../pages/test';
-import { LessonOne }  from '../pages/lessonone';
-import { LessonTwo }  from '../pages/lessontwo';
-import { LessonThree }  from '../pages/lessonthree';
-import { LessonFour }  from '../pages/lessonfour';
+import { LessonOne }  from '../pages/Lessons/lessonone';
+import { LessonTwo }  from '../pages/Lessons/lessontwo';
+import { LessonThree }  from '../pages/Lessons/lessonthree';
+import { LessonFour }  from '../pages/Lessons/lessonfour';
 
 
 /*
